@@ -4,15 +4,15 @@
 ---
 
 ## 📚 Índice
-- [👥 Equipo BioFit](#-equipo-biofit)
-- [💡 Propuesta de Valor](#-propuesta-de-valor)
-- [🎯 Problema que Aborda](#-problema-que-aborda)
-- [🚀 Solución Propuesta](#-solución-propuesta)
-- [🧩 Módulos Principales](#-módulos-principales)
-- [👤 Segmentos Objetivo](#-segmentos-objetivo)
-- [🧠 Características Clave](#-características-clave)
-- [📂 Estructura del Proyecto](#-estructura-del-proyecto)
-- [📩 Contacto](#-contacto)
+- [Equipo BioFit](#-equipo-biofit)
+- [Propuesta de Valor](#-propuesta-de-valor)
+- [Problema que Aborda](#-problema-que-aborda)
+- [Solución Propuesta](#-solución-propuesta)
+- [Módulos Principales](#-módulos-principales)
+- [Segmentos Objetivo](#-segmentos-objetivo)
+- [Características Clave](#-características-clave)
+- [Estructura del Proyecto](#-estructura-del-proyecto)
+- [Contacto](#-contacto)
 
 ---
 
