@@ -109,6 +109,7 @@ Esto genera **frustración, desmotivación y riesgo de lesiones**, impidiendo lo
 ## 📂 Estructura del Proyecto
 
 landing-page-pulse/
+
 │
 
 ├── README.md
