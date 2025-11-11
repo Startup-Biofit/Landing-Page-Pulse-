@@ -3,7 +3,7 @@ Plataforma Inteligente de Bienestar Integral
 
 ## 🧩 Proyecto desarrollado por el equipo **BioFit**
 
-### 👥 **Pulse Plus Team **
+### 👥 **Pulse+ Team**
 | Nombre completo | Código de estudiante |
 |------------------|----------------------|
 | Díaz Núñez, Mauricio | U202411349 |
