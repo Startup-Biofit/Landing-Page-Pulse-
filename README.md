@@ -3,7 +3,6 @@ Plataforma Inteligente de Bienestar Integral
 
 ## 🧩 Proyecto desarrollado por el equipo **BioFit**
 
-### 👥 **Pulse+ Team**
 | Nombre completo | Código de estudiante |
 |------------------|----------------------|
 | Díaz Núñez, Mauricio | U202411349 |
@@ -19,9 +18,9 @@ Plataforma Inteligente de Bienestar Integral
 **BioFit**, a través de su plataforma **Pulse+**, ofrece una experiencia integral de bienestar inteligente que combina **realidad virtual (VR)**, **inteligencia artificial (IA)** y **machine learning (ML)** para acompañar al usuario las 24 horas del día.
 
 La aplicación monitorea la **actividad física**, el **sueño**, la **alimentación**, el **conteo de calorías**, los **macronutrientes** y el **peso corporal**, generando rutinas **automáticas y personalizadas** según los objetivos del usuario:  
-- 🔹 Perder grasa  
-- 🔹 Ganar peso  
-- 🔹 Desarrollar masa muscular  
+ 🔹 Perder grasa  
+ 🔹 Ganar peso  
+ 🔹 Desarrollar masa muscular  
 
 Además, conecta a los usuarios con **entrenadores y nutricionistas certificados**, brindando acompañamiento profesional que garantiza un progreso **seguro, confiable y orientado a resultados reales**.
 
