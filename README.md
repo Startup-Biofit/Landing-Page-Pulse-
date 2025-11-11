@@ -3,10 +3,10 @@
 
 ---
 
-## 📚 Índice
+## Índice
 - [Equipo BioFit](#-equipo-biofit)
 - [Propuesta de Valor](#-propuesta-de-valor)
-- [Problema que Aborda](#-problema-que-aborda)
+- [Problemática](#-problemática)
 - [Solución Propuesta](#-solución-propuesta)
 - [Módulos Principales](#-módulos-principales)
 - [Segmentos Objetivo](#-segmentos-objetivo)
@@ -41,7 +41,7 @@ Además, conecta a los usuarios con **entrenadores y nutricionistas certificados
 
 ---
 
-## 🎯 Problema que aborda
+## 🎯 Problemática
 En la sociedad actual, muchas personas inician rutinas de ejercicio y alimentación saludable, pero las abandonan rápidamente por:
 
 - Falta de acompañamiento y motivación constante  
