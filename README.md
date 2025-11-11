@@ -3,7 +3,7 @@ Plataforma Inteligente de Bienestar Integral
 
 ## 🧩 Proyecto desarrollado por el equipo **BioFit**
 
-### 👥 **Integrantes del equipo**
+### 👥 **Pulse Plus Team **
 | Nombre completo | Código de estudiante |
 |------------------|----------------------|
 | Díaz Núñez, Mauricio | U202411349 |
@@ -84,21 +84,34 @@ Esto genera **frustración**, **desmotivación** y **riesgo de lesiones**, impid
 ## 📂 **Estructura del Proyecto**
 
 landing-page-pulse/
+
 │
+
 ├── README.md
+
 ├── public/
+
 │ ├── index.html
+
 │ ├── favicon.ico
+
 │ └── assets/
+
 │ ├── styles/
+
 │ │ └── styles.css
+
 │ ├── images/
+
 │ └── scripts/
+
 │ └── main.js
+
 
 📩 Contacto
 
 Organización: PulsePlusTeam
+
 Repositorio: https://github.com/PulsePlusTeam/landing-page-pulse
 
 🧡 “Tu cuerpo. Tu ritmo. Tu bienestar.” – Pulse+ by BioFit
