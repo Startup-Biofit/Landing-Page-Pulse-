@@ -110,9 +110,9 @@ landing-page-pulse/
 
 📩 Contacto
 
-Organización: PulsePlusTeam
+Organización: Startup Biofit
 
-Repositorio: https://github.com/PulsePlusTeam/landing-page-pulse
+Repositorio: https://github.com/Startup-Biofit/Landing-Page-Pulse-
 
 🧡 “Tu cuerpo. Tu ritmo. Tu bienestar.” – Pulse+ by BioFit
 
