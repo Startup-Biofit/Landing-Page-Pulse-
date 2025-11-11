@@ -1,5 +1,5 @@
-# 🌟 Pulse+ 
-Plataforma Inteligente de Bienestar Integral
+# 🌟 PULSE+ 
+🧡 “El impulso hacia tu mejor versión” – Pulse+ by BioFit
 
 ## 🧩 Proyecto desarrollado por el equipo **BioFit**
 
@@ -106,13 +106,12 @@ landing-page-pulse/
 
 │ └── main.js
 
+---
 
-📩 Contacto
+📩 **Contacto**
 
 Organización: Startup Biofit
 
 Repositorio: https://github.com/Startup-Biofit/Landing-Page-Pulse-
 
-🧡 “Tu cuerpo. Tu ritmo. Tu bienestar.” – Pulse+ by BioFit
 
----
