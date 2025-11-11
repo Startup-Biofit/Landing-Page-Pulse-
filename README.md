@@ -57,19 +57,19 @@ Esto genera **frustración, desmotivación y riesgo de lesiones**, impidiendo lo
 **Pulse+** es un ecosistema digital inteligente que combina tecnologías avanzadas para crear una experiencia única:
 
 ### 🔸 Inteligencia Artificial y Machine Learning
-- Analiza datos en tiempo real para adaptar planes de entrenamiento y nutrición.  
-- Ajusta automáticamente rutinas según el progreso y objetivos del usuario.
+ Analiza datos en tiempo real para adaptar planes de entrenamiento y nutrición.  
+ Ajusta automáticamente rutinas según el progreso y objetivos del usuario.
 
 ### 🔸 Realidad Virtual (VR)
-- Entrenamientos inmersivos e interactivos que transforman el ejercicio en una experiencia divertida y motivadora.
+ Entrenamientos inmersivos e interactivos que transforman el ejercicio en una experiencia divertida y motivadora.
 
 ### 🔸 Asistente Virtual con NLP
-- Comprende el lenguaje natural del usuario y responde de forma empática.  
-- Ofrece recomendaciones, recordatorios y mensajes de motivación para mantener la constancia.
+ Comprende el lenguaje natural del usuario y responde de forma empática.  
+ Ofrece recomendaciones, recordatorios y mensajes de motivación para mantener la constancia.
 
 ---
 
-## 🧩 Módulos Principales
+## Módulos Principales
 
 ### 🍎 Nutrición Inteligente
 - Registro y análisis de comidas, calorías y macronutrientes.  
@@ -96,13 +96,13 @@ Esto genera **frustración, desmotivación y riesgo de lesiones**, impidiendo lo
 
 ## 👤 Segmentos Objetivo
 
-### 🧍 Usuario Fit
+### Usuario Fit
 - Seguimiento profesional personalizado.  
 - Planes de entrenamiento y nutrición ajustados por IA.  
 - Experiencias inmersivas en VR.  
 - Retos y recompensas que impulsan la motivación.
 
-### 🧑‍🏫 Usuario Entrenador
+### Usuario Entrenador
 - Herramientas de gestión de clientes y rutinas.  
 - Analítica de rendimiento.  
 - Posicionamiento digital y conexión con nuevos usuarios.
