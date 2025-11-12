@@ -1,3 +1,4 @@
+/* CONFIGURACIÓN GENERAL */
 
 body {
   font-family: 'Poppins', sans-serif;
@@ -7,13 +8,137 @@ body {
   text-align: center;
 }
 
-.features {
+/* ====================================================== */
+/* SECCIÓN: PULSE EXPERIENCE */
+/* ====================================================== */
+.experience-section {
+  background-color: #0b0f0e;
+  color: #fff;
+  text-align: center;
+  padding: 5rem 2rem;
+}
+
+.experience-section h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.experience-section h2 span {
+  color: #00ff80;
+}
+
+.experience-section .subtitle {
+  color: #aaa;
+  margin-bottom: 3rem;
+  font-size: 1rem;
+}
+
+/* Tarjetas Pulse */
+.pulse-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.pulse-card {
+  background: rgba(25, 30, 27, 0.85);
+  border: 1px solid rgba(0, 255, 128, 0.2);
+  border-radius: 16px;
+  padding: 2rem;
+  width: 100%;
+  max-width: 380px;
+  box-shadow: 0 0 20px rgba(0, 255, 128, 0.1);
+  transition: all 0.3s ease;
+}
+
+.pulse-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 25px rgba(0, 255, 128, 0.4);
+  border-color: #00ff80;
+}
+
+.pulse-card .icon {
+  font-size: 2.5rem;
+  background-color: #00ff80;
+  color: #0b0f0e;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+}
+
+.pulse-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.pulse-card .desc {
+  color: #bbb;
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+.pulse-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto 1.5rem;
+  text-align: left;
+  max-width: 280px;
+}
+
+.pulse-card ul li {
+  margin: 0.5rem 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #ccc;
+}
+
+.pulse-card ul li::before {
+  content: "✓";
+  color: #00ff80;
+  font-weight: bold;
+}
+
+.btn {
+  display: inline-block;
+  width: 100%;
+  padding: 0.9rem;
+  border: none;
+  border-radius: 12px;
+  background-color: #00ff80;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  background-color: #00cc66;
+}
+
+.price {
+  margin-top: 1rem;
+  color: #999;
+  font-size: 0.85rem;
+}
+
+/* ====================================================== */
+/* SECCIÓN: JÓVENES ADULTOS */
+/* ====================================================== */
+.jovenes-section {
+  background-color: #fff;
   padding: 60px 20px;
   max-width: 1200px;
   margin: auto;
 }
 
-.features h2 {
+.jovenes-section h2 {
   font-size: 2rem;
   font-weight: 700;
   color: #0a5e2a;
@@ -34,6 +159,7 @@ body {
   margin: 15px 0;
 }
 
+/* Tarjetas Jovenes */
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -46,8 +172,6 @@ body {
   border-radius: 16px;
   box-shadow: 0 4px 20px rgba(0,0,0,0.15);
   overflow: hidden;
-  text-align: left;
-  padding: 0 0 20px 0;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -68,7 +192,95 @@ body {
 }
 
 .card p {
-  margin: 0 15px;
+  margin: 0 15px 15px;
   color: #555;
   font-size: 0.9rem;
+}
+
+/* ====================================================== */
+/* SECCIÓN: ENTRENADORES Y COACHES */
+/* ====================================================== */
+.entrenadores-section {
+  background-color: #fff;
+  color: #0b0f0e;
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.coaches-header {
+  margin-bottom: 3rem;
+}
+
+.badge-coach {
+  display: inline-flex;
+  align-items: center;
+  background: #e8f8ef;
+  color: #007a45;
+  font-weight: 600;
+  padding: 0.6rem 1.2rem;
+  border-radius: 30px;
+  font-size: 1rem;
+}
+
+.badge-coach .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #00ff80;
+  margin-right: 0.6rem;
+}
+
+.coach-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.coach-card {
+  background-color: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 360px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.coach-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.coach-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 1.5rem;
+  text-align: left;
+}
+
+.card-content h3 {
+  color: #007a45;
+  font-size: 1.2rem;
+  margin-bottom: 0.6rem;
+}
+
+.card-content p {
+  color: #444;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+
+@media (max-width: 768px) {
+  .pulse-cards,
+  .coach-cards {
+    flex-direction: column;
+    align-items: center;
+  }
 }

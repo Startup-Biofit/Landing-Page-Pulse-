@@ -3,49 +3,136 @@
 <head>
   <meta charset="UTF-8">
   <title>Características</title>
-  <!-- Ajusta la ruta relativa al CSS -->
   <link rel="stylesheet" href="assets/styles/styles.css">
 </head>
 <body>
 
-<section id="caracteristicas" class="features">
-  <h2>Características Principales</h2>
-  <h2>Dos interfaces, experiencias perfectas</h2>
-  
-  <p class="subtitle">
-    Tecnología avanzada adaptada a las necesidades específicas de cada usuario
-  </p>
-  <div class="badge">🔵 Para Usuarios Jóvenes Adultos</div>
-  <p class="description">
-    Transformación personal con tecnología de vanguardia
-  </p>
+  <!-- ====================================================== -->
+  <!-- SECCIÓN: ELIGE TU EXPERIENCIA PULSE+ -->
+  <!-- ====================================================== -->
+  <section id="pulse-experience" class="experience-section">
+    <h2>Elige tu experiencia <span>Pulse+</span></h2>
+    <p class="subtitle">
+      Dos interfaces especializadas, ambas potenciadas por IA y realidad virtual
+    </p>
 
-  <div class="cards">
-    <div class="card">
-      <img src="public/assets/img/ia-personal.jpg" alt="IA Personal">
-      <h3>🤖 IA Personal</h3>
-      <p>Rutinas que evolucionan contigo. La IA evalúa tu progreso y adapta entrenamientos para maximizar tu transformación física y mental.</p>
+    <div class="pulse-cards">
+      <!-- Opción: Usuario -->
+      <div class="pulse-card" id="cardUsuario">
+        <div class="icon">👤</div>
+        <h3>Soy Usuario</h3>
+        <p class="desc">Joven adulto que busca transformación física y mental</p>
+        <ul>
+          <li>Registro personalizado Usuario Fit</li>
+          <li>Entrenamientos VR y búsqueda inteligente</li>
+          <li>Dashboard con IA y seguimiento total</li>
+        </ul>
+        <button class="btn" onclick="elegir('usuario')">Comenzar mi Transformación →</button>
+        <p class="price">Gratis para empezar · Premium desde S/29.90/mes</p>
+      </div>
+
+      <!-- Opción: Entrenador -->
+      <div class="pulse-card" id="cardEntrenador">
+        <div class="icon">🧑‍🏫</div>
+        <h3>Soy Entrenador</h3>
+        <p class="desc">Coach que gestiona clientes y optimiza rutinas</p>
+        <ul>
+          <li>Panel multicliente y marketplace integrado</li>
+          <li>Reportes PDF/Excel y métricas avanzadas</li>
+          <li>Herramientas VR para demostraciones</li>
+        </ul>
+        <button class="btn" onclick="elegir('entrenador')">Optimizar mi Práctica →</button>
+        <p class="price">Starter S/49.90/mes · Pro S/99.90/mes</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================== -->
+  <!-- SECCIÓN: JÓVENES ADULTOS -->
+  <!-- ====================================================== -->
+  <section id="jovenes" class="jovenes-section">
+    <h2>Dos interfaces, experiencias perfectas</h2>
+    <p class="subtitle">Tecnología avanzada adaptada a las necesidades específicas de cada usuario</p>
+    <div class="badge">🔵 Para Usuarios Jóvenes Adultos</div>
+    <p class="description">Transformación personal con tecnología de vanguardia</p>
+
+    <div class="cards">
+      <div class="card">
+        <img src="public/assets/img/ia-personal.jpg" alt="IA Personal">
+        <h3>🤖 IA Personal</h3>
+        <p>Rutinas que evolucionan contigo. La IA evalúa tu progreso y adapta entrenamientos para maximizar tu transformación física y mental.</p>
+      </div>
+
+      <div class="card">
+        <img src="public/assets/img/experiencia-vr.jpg" alt="Experiencia VR">
+        <h3>🕶️ Experiencia VR</h3>
+        <p>Entrenamientos inmersivos en casa, gym o al aire libre. Mejora tu adherencia mientras te diviertes alcanzando tus objetivos.</p>
+      </div>
+
+      <div class="card">
+        <img src="public/assets/img/control-nutricional.jpg" alt="Control Nutricional">
+        <h3>🥗 Control Nutricional</h3>
+        <p>Gestión inteligente de calorías y macronutrientes. Planes personalizados que se adaptan a tus necesidades.</p>
+      </div>
+
+      <div class="card">
+        <img src="public/assets/img/flexibilidad.jpg" alt="Flexibilidad Total">
+        <h3>📱 Flexibilidad Total</h3>
+        <p>Entrena donde quieras: en casa, gym o al aire libre. Todo sincronizado entre dispositivos para no perder tu progreso.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================== -->
+  <!-- SECCIÓN: ENTRENADORES Y COACHES -->
+  <!-- ====================================================== -->
+  <section id="entrenadores" class="entrenadores-section">
+    <div class="coaches-header">
+      <div class="badge-coach">
+        <span class="dot"></span> Para Entrenadores y Coaches
+      </div>
+      <p class="subtitle">Herramientas profesionales para gestión eficiente</p>
     </div>
 
-    <div class="card">
-      <img src="public/assets/img/experiencia-vr.jpg" alt="Experiencia VR">
-      <h3>🕶️ Experiencia VR</h3>
-      <p>Entrenamientos inmersivos en casa, gym o al aire libre. Mejora tu adherencia mientras te diviertes alcanzando tus objetivos.</p>
-    </div>
+    <div class="coach-cards">
+      <div class="coach-card">
+        <img src="public/assets/img/gestion-clientes.jpg" alt="Gestión de Clientes">
+        <div class="card-content">
+          <h3>👥 Gestión de Clientes</h3>
+          <p>Dashboard completo para administrar múltiples clientes, hacer seguimiento individual y personalizar rutinas profesionalmente.</p>
+        </div>
+      </div>
 
-    <div class="card">
-      <img src="public/assets/img/control-nutricional.jpg" alt="Control Nutricional">
-      <h3>🥗 Control Nutricional</h3>
-      <p>Gestión inteligente de calorías y macronutrientes. Planes personalizados que se adaptan a tus necesidades.</p>
-    </div>
+      <div class="coach-card">
+        <img src="public/assets/img/analisis-avanzado.jpg" alt="Análisis Avanzado">
+        <div class="card-content">
+          <h3>📊 Análisis Avanzado</h3>
+          <p>Reportes detallados del progreso de tus clientes, métricas de adherencia y análisis de resultados para optimizar tu trabajo.</p>
+        </div>
+      </div>
 
-    <div class="card">
-      <img src="public/assets/img/flexibilidad.jpg" alt="Flexibilidad Total">
-      <h3>📱 Flexibilidad Total</h3>
-      <p>Entrena donde quieras: en casa, gym o al aire libre. Todo sincronizado entre dispositivos para no perder tu progreso.</p>
+      <div class="coach-card">
+        <img src="public/assets/img/organizacion-pro.jpg" alt="Organización Pro">
+        <div class="card-content">
+          <h3>📅 Organización Pro</h3>
+          <p>Calendario inteligente, programación automática de rutinas y herramientas profesionales para facilitar tu trabajo diario.</p>
+        </div>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
+
+  <!-- ====================================================== -->
+  <!-- SCRIPT -->
+  <!-- ====================================================== -->
+  <script>
+    function elegir(tipo) {
+      if (tipo === 'usuario') {
+        alert("Has elegido: Usuario 💪 ¡Prepárate para tu transformación!");
+      } else {
+        alert("Has elegido: Entrenador 🧠 ¡Optimiza tu práctica con IA!");
+      }
+    }
+  </script>
 
 </body>
 </html>
