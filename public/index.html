@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="es">
 <head>
   <meta charset="UTF-8">
@@ -8,8 +9,9 @@
 <body>
 
   <!-- ====================================================== -->
-  <!-- SECCIÓN: ELIGE TU EXPERIENCIA PULSE+ -->
+  <!-- SECCIÓN: EXPERIENCIA PULSE+ -->
   <!-- ====================================================== -->
+
   <section id="pulse-experience" class="experience-section">
     <h2>Elige tu experiencia <span>Pulse+</span></h2>
     <p class="subtitle">
@@ -17,8 +19,11 @@
     </p>
 
     <div class="pulse-cards">
+
       <!-- Opción: Usuario -->
+
       <div class="pulse-card" id="cardUsuario">
+
         <div class="icon">👤</div>
         <h3>Soy Usuario</h3>
         <p class="desc">Joven adulto que busca transformación física y mental</p>
@@ -33,7 +38,7 @@
 
       <!-- Opción: Entrenador -->
       <div class="pulse-card" id="cardEntrenador">
-        <div class="icon">🧑‍🏫</div>
+        <div class="icon">👤</div>
         <h3>Soy Entrenador</h3>
         <p class="desc">Coach que gestiona clientes y optimiza rutinas</p>
         <ul>
@@ -41,7 +46,7 @@
           <li>Reportes PDF/Excel y métricas avanzadas</li>
           <li>Herramientas VR para demostraciones</li>
         </ul>
-        <button class="btn" onclick="elegir('entrenador')">Optimizar mi Práctica →</button>
+        <button class="btn" onclick="elegir('entrenador')">Gestionar mis Clientes →</button>
         <p class="price">Starter S/49.90/mes · Pro S/99.90/mes</p>
       </div>
     </div>
@@ -50,10 +55,13 @@
   <!-- ====================================================== -->
   <!-- SECCIÓN: JÓVENES ADULTOS -->
   <!-- ====================================================== -->
+
   <section id="jovenes" class="jovenes-section">
     <h2>Dos interfaces, experiencias perfectas</h2>
     <p class="subtitle">Tecnología avanzada adaptada a las necesidades específicas de cada usuario</p>
-    <div class="badge">🔵 Para Usuarios Jóvenes Adultos</div>
+    <div class="badge-jovenes">
+        <span class="dot"></span> Para Usuarios Jóvenes Adultos
+      </div>
     <p class="description">Transformación personal con tecnología de vanguardia</p>
 
     <div class="cards">
@@ -86,6 +94,7 @@
   <!-- ====================================================== -->
   <!-- SECCIÓN: ENTRENADORES Y COACHES -->
   <!-- ====================================================== -->
+
   <section id="entrenadores" class="entrenadores-section">
     <div class="coaches-header">
       <div class="badge-coach">
@@ -121,9 +130,8 @@
     </div>
   </section>
 
-  <!-- ====================================================== -->
-  <!-- SCRIPT -->
-  <!-- ====================================================== -->
+  
+  <!-- SCRIPT PARA BOTONES -->
   <script>
     function elegir(tipo) {
       if (tipo === 'usuario') {
