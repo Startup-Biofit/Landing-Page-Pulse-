@@ -195,7 +195,7 @@ ul li::before {
 .footer-contenedor {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 2.5rem;
+  gap: 4rem;
   margin-bottom: 2rem;
 }
 
@@ -219,7 +219,7 @@ ul li::before {
 }
 
 .footer p {
-  margin: 0.6rem 0;
+  margin: 2rem 2;
 }
 
 copyright {
