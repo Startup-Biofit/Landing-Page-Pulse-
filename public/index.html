@@ -8,23 +8,26 @@
 </head>
 <body>
 
-  <!-- ====================================================== -->
-  <!-- SECCIÓN: EXPERIENCIA PULSE+ -->
-  <!-- ====================================================== -->
+
+  <!-- ⚡SECCIÓN: EXPERIENCIA PULSE+ -->
 
   <section id="pulse-experience" class="experience-section">
     <h2>Elige tu experiencia <span>Pulse+</span></h2>
     <p class="subtitle">
-      Dos interfaces especializadas, ambas potenciadas por IA y realidad virtual
+      Dos interfaces especializadas, ambas potenciadas con IA y realidad virtual
     </p>
 
-    <div class="pulse-cards">
-
+    <div class="experience-cards">
       <!-- Opción: Usuario -->
+      <div class="experience-card" id="cardUsuario">
+      <div class="user">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M20 21v-2a4 4 0 0 0-3-3.87"></path>
+          <path d="M4 21v-2a4 4 0 0 1 3-3.87"></path>
+          <circle cx="12" cy="7" r="4"></circle>
+        </svg>
+      </div>
 
-      <div class="pulse-card" id="cardUsuario">
-
-        <div class="icon">👤</div>
         <h3>Soy Usuario</h3>
         <p class="desc">Joven adulto que busca transformación física y mental</p>
         <ul>
@@ -37,8 +40,15 @@
       </div>
 
       <!-- Opción: Entrenador -->
-      <div class="pulse-card" id="cardEntrenador">
-        <div class="icon">👤</div>
+      <div class="experience-card" id="cardEntrenador">
+      <div class="user">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M20 21v-2a4 4 0 0 0-3-3.87"></path>
+          <path d="M4 21v-2a4 4 0 0 1 3-3.87"></path>
+          <circle cx="12" cy="7" r="4"></circle>
+        </svg>
+      </div>
+
         <h3>Soy Entrenador</h3>
         <p class="desc">Coach que gestiona clientes y optimiza rutinas</p>
         <ul>
@@ -52,51 +62,62 @@
     </div>
   </section>
 
-  <!-- ====================================================== -->
-  <!-- SECCIÓN: JÓVENES ADULTOS -->
-  <!-- ====================================================== -->
+  
+  <!-- ⚡SECCIÓN: JÓVENES ADULTOS -->
 
-  <section id="jovenes" class="jovenes-section">
+  <section id="jovenes" class="joven-section">
     <h2>Dos interfaces, experiencias perfectas</h2>
     <p class="subtitle">Tecnología avanzada adaptada a las necesidades específicas de cada usuario</p>
-    <div class="badge-jovenes">
-        <span class="dot"></span> Para Usuarios Jóvenes Adultos
-      </div>
+
+    <div class="badge-joven">
+      <span class="dot"></span> Para Usuarios Jóvenes Adultos
+    </div>
     <p class="description">Transformación personal con tecnología de vanguardia</p>
 
-    <div class="cards">
-      <div class="card">
+    <div class="joven-cards">
+      <div class="joven-card">
         <img src="assets/images/ia-personal.jpg" alt="IA Personal">
-        <h3>🤖 IA Personal</h3>
-        <p>Rutinas que evolucionan contigo. La IA evalúa tu progreso y adapta entrenamientos para maximizar tu transformación física y mental.</p>
+        <div class="joven-card-content">
+ <!-- Ícono - IA Personal --->         
+          <h3>🤖 IA Personal</h3>
+          <p>Rutinas que evolucionan contigo. La IA evalúa tu progreso y adapta entrenamientos para maximizar tu transformación física y mental.</p>
+        </div>
       </div>
 
-      <div class="card">
+      <div class="joven-card">
         <img src="assets/images/experiencia-vr.jpg" alt="Experiencia VR">
-        <h3>🕶️ Experiencia VR</h3>
-        <p>Entrenamientos inmersivos en casa, gym o al aire libre. Mejora tu adherencia mientras te diviertes alcanzando tus objetivos.</p>
+        <div class="joven-card-content">
+  <!-- Ícono - Experiencia VR --->
+          <h3>🕶️ Experiencia VR</h3>
+          <p>Entrenamientos inmersivos en casa, gym o al aire libre. Mejora tu adherencia mientras te diviertes alcanzando tus objetivos.</p>
+        </div>
       </div>
 
-      <div class="card">
+      <div class="joven-card">
         <img src="assets/images/control-nutricional.jpg" alt="Control Nutricional">
-        <h3>🥗 Control Nutricional</h3>
-        <p>Gestión inteligente de calorías y macronutrientes. Planes personalizados que se adaptan a tus necesidades.</p>
+        <div class="joven-card-content">
+  <!-- Ícono - Control Nutricional --->
+          <h3>🥗 Control Nutricional</h3>
+          <p>Gestión inteligente de calorías y macronutrientes. Planes personalizados que se adaptan a tus necesidades.</p>
+        </div>
       </div>
 
-      <div class="card">
+      <div class="joven-card">
         <img src="assets/images/flexibilidad.jpg" alt="Flexibilidad Total">
-        <h3>📱 Flexibilidad Total</h3>
-        <p>Entrena donde quieras: en casa, gym o al aire libre. Todo sincronizado entre dispositivos para no perder tu progreso.</p>
+        <div class="joven-card-content">
+  <!-- Ícono - Flexibilidad Total --->
+          <h3>📱 Flexibilidad Total</h3>
+          <p>Entrena donde quieras: en casa, gym o al aire libre. Todo sincronizado entre dispositivos para no perder tu progreso.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- ====================================================== -->
-  <!-- SECCIÓN: ENTRENADORES Y COACHES -->
-  <!-- ====================================================== -->
 
-  <section id="entrenadores" class="entrenadores-section">
-    <div class="coaches-header">
+  <!-- ⚡SECCIÓN: ENTRENADORES Y COACHES -->
+
+  <section id="entrenadores" class="coach-section">
+    <div class="coach-header">
       <div class="badge-coach">
         <span class="dot"></span> Para Entrenadores y Coaches
       </div>
@@ -105,32 +126,57 @@
 
     <div class="coach-cards">
       <div class="coach-card">
-        <img src="public/assets/img/gestion-clientes.jpg" alt="Gestión de Clientes">
-        <div class="card-content">
-          <h3>👥 Gestión de Clientes</h3>
+        <img src="assets/images/gestion-clientes.jpg" alt="Gestión de Clientes">
+        <div class="coach-card-content">
+<!-- Ícono - Gestion Clientes --->
+      <h3>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" stroke="#00ff80" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle; margin-right: 0.3rem;">
+          <path d="M17 21v-2a4 4 0 0 0-3-3.87"></path>
+          <path d="M7 21v-2a4 4 0 0 1 3-3.87"></path>
+          <circle cx="12" cy="7" r="4"></circle>
+        </svg>
+        Gestión de Clientes
+      </h3>
           <p>Dashboard completo para administrar múltiples clientes, hacer seguimiento individual y personalizar rutinas profesionalmente.</p>
         </div>
       </div>
 
       <div class="coach-card">
-        <img src="public/assets/img/analisis-avanzado.jpg" alt="Análisis Avanzado">
-        <div class="card-content">
-          <h3>📊 Análisis Avanzado</h3>
+        <img src="assets/images/analisis-avanzado.jpg" alt="Análisis Avanzado">
+        <div class="coach-card-content">
+  <!-- Ícono - Analisis Avanzado --->
+      <h3>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" stroke="#00b359" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle; margin-right: 0.3rem;">
+          <line x1="18" y1="20" x2="18" y2="10"></line>
+          <line x1="12" y1="20" x2="12" y2="4"></line>
+          <line x1="6" y1="20" x2="6" y2="14"></line>
+        </svg>
+        Análisis Avanzado
+      </h3>
           <p>Reportes detallados del progreso de tus clientes, métricas de adherencia y análisis de resultados para optimizar tu trabajo.</p>
         </div>
       </div>
 
       <div class="coach-card">
-        <img src="public/assets/img/organizacion-pro.jpg" alt="Organización Pro">
-        <div class="card-content">
-          <h3>📅 Organización Pro</h3>
+        <img src="assets/images/organizacion-pro.jpg" alt="Organización Pro">
+        <div class="coach-card-content">
+<!-- Ícono - Organización Pro --->
+      <h3>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" stroke="#00b359" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle; margin-right: 0.3rem;">
+          <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+          <line x1="16" y1="2" x2="16" y2="6"></line>
+          <line x1="8" y1="2" x2="8" y2="6"></line>
+          <line x1="3" y1="10" x2="21" y2="10"></line>
+        </svg>
+        Organización Pro
+      </h3>
           <p>Calendario inteligente, programación automática de rutinas y herramientas profesionales para facilitar tu trabajo diario.</p>
         </div>
       </div>
     </div>
+
   </section>
 
-  
   <!-- SCRIPT PARA BOTONES -->
   <script>
     function elegir(tipo) {
@@ -141,6 +187,13 @@
       }
     }
   </script>
+
+<script type="module">
+  import { createIcons, icons } from 'https://cdn.jsdelivr.net/npm/lucide@latest/dist/lucide.esm.js';
+  createIcons({ icons });
+</script>
+
+
 
 </body>
 </html>
