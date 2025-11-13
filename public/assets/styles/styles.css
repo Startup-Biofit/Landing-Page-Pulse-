@@ -1,83 +1,99 @@
-body
-{
-    margin: 0;
-    padding: 0;
+/* FUENTE GLOBAL */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* CONFIGURACIÓN GENERAL */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background-color: #fff;
+  color: #222;
+  text-align: center;
 }
 
-.Testimonios
-{
-    position: relative;
-    padding-bottom: 230px;
+.testimonials-section {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 60px 0;
+  text-align: center;
 }
 
-.Up-Border
-{
-    background-color: rgb(0, 160, 0);
-    height: 60px;
-    width: 100%;
+h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
 }
 
-.Container
-{
-    padding: 40px 180px;  /* padding igual izquierda y derecha */
-    display: flex;
-    flex-direction: column;
-    gap: 10px;  /* Espacio entre título y opiniones */
+.subtitle {
+  color: #666;
+  font-size: 1.05rem;
+  margin-bottom: 40px;
 }
 
-.title-container
-{
-    width: 300px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
+.category-title {
+  background: #e3f7ea;
+  color: #0f9d58;
+  padding: 8px 16px;
+  width: fit-content;
+  margin: 40px auto 20px;
+  font-weight: 600;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
-.title-container h3
-{
-    margin:0;
-    text-align: center;
-
+.cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px; 
+  flex-wrap: wrap;
+  margin-bottom: 20px;
 }
 
-.Opinions
-{
-
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    column-gap: 100px;
+.testimonial-card {
+  width: 450px;
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.12);
+  text-align: left;
 }
 
-.Opinions>div
-{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-
-    margin-top: 100px;
-    max-width: 300px;
-    text-align: center;
-    word-wrap: break-word;
-
-    padding-top: 80px;
-    padding-bottom: 80px;
-    padding-right: 20px;
-    padding-left: 30px;
-
-    background-color: #fffffe;
-    box-shadow: 5px 6px 8px rgba(0, 0, 0, 0.2);
+.avatar {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  margin-bottom: 10px;
 }
 
-.Opinions>div>img
-{
-    position: relative;
-    left: 0;
-    width: 120px;
-    height: 80px;
+h3 {
+  margin: 0;
+  font-weight: 600;
+}
+
+.role {
+  font-size: 0.9rem;
+  color: #777;
+  margin: 2px 0 6px;
+}
+
+.location {
+  font-size: 0.85rem;
+  color: #0f9d58;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.stars {
+  color: #f4c430;
+  font-size: 1.1rem;
+  margin: 10px 0;
+}
+
+.comment {
+  font-size: 0.92rem;
+  color: #444;
+  line-height: 1.45;
 }
