@@ -1,136 +1,228 @@
-/* CONFIGURACIÓN GENERAL*/
+/* FUENTE GLOBAL */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
+/* CONFIGURACIÓN GENERAL */
 body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
-  background: #ffffff;
-  color: #fff;
-  padding: 0;
-}
-
-/* ===== Header ===== */
-header {
+  background-color: #ffffff;
+  color: #222;
   text-align: center;
-  padding: 2rem 1rem;
-  -webkit-text-stroke: 1px #000;
 }
 
-header h1 {
-  color: #00ff99;
+h2 {
   font-size: 2rem;
+  margin-top: 2rem;
+  color: #0f0f0f;
+  font-weight: 600;
 }
 
-/* ===== SecciÃ³n de planes ===== */
-.planes {
+.resaltar-verde {
+  color: #01c96b;
+  font-weight: 700;
+}
+
+/* CONTENEDORES GENERALES */
+.contenedor-planes {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  gap: 2rem;
-  padding: 2rem;
+  gap: 2.5rem;
+  padding: 3rem 2rem;
+  flex-wrap: wrap;
 }
 
-.plan {
-  background: #111;
-  border-radius: 1rem;
-  width: 300px;
+/* TARJETAS */
+.plan-card {
+  background: #0f0f0f;
+  color: #fff;
   padding: 2rem;
+  border-radius: 20px;
+  width: 320px;
   text-align: center;
+  position: relative;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.plan:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 10px 25px rgba(0, 255, 128, 0.3);
+.plan-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.35);
 }
 
-.plan.destacado {
-  border: 2px solid #00ff99;
-  background: linear-gradient(180deg, #111 0%, #0f0f0f 100%);
-  position: relative;
+.plan-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 35px rgba(0,0,0,0.35);
 }
 
-.etiqueta {
-  background: #00ff99;
-  color: #000;
-  font-weight: bold;
-  padding: 0.3rem 1rem;
-  border-radius: 1rem;
-  display: inline-block;
-  position: absolute;
-  top: -15px;
-  left: 50%;
-  transform: translateX(-50%);
+.plan-card h3 {
+  margin: 0 0 1rem;
+  font-size: 1.4rem;
+  font-weight: 600;
 }
 
-/* ===== Textos ===== */
 .precio {
-  font-size: 2rem;
-  color: #00ff99;
-  font-weight: bold;
-  margin: 1rem 0;
+  font-size: 2.3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
 }
 
 .precio span {
   font-size: 1rem;
-  color: #aaa;
+  font-weight: 300;
+  color: #ccc;
 }
 
-.descripcion {
-  color: #aaa;
-  font-size: 0.9rem;
-  margin-bottom: 1.5rem;
-}
-
-/* ===== Botones ===== */
-.boton {
+/* BOTONES */
+.btn {
+  font-family: 'Poppins', sans-serif;
   background-color: #00ff99;
   border: none;
   color: #000;
   padding: 0.8rem 1.5rem;
   border-radius: 0.5rem;
   cursor: pointer;
-  font-weight: bold;
-  transition: background 0.3s, transform 0.2s;
+  transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
-.boton:hover {
-  background-color: #00cc77;
-  transform: scale(1.05);
+.btn:hover {
+  transform: scale(1.03);
+  opacity: 0.9;
 }
 
-.boton.grande {
-  font-size: 1.1rem;
-  padding: 1rem 2rem;
+.btn:hover {
+  opacity: 0.85;
+  transform: scale(1.02);
 }
 
-/* ===== Lista ===== */
+.btn.verde {
+  background: #00ff88;
+  color: #000;
+  font-weight: 600;
+  box-shadow: 0 0 12px rgba(0,255,140,0.4);
+}
+
+.btn.grande {
+  padding: 1rem;
+  font-size: 1.2rem;
+  border-radius: 18px;
+}
+
+/* LISTAS */
 ul {
   list-style: none;
   padding: 0;
-  margin-top: 1rem;
 }
 
 ul li {
-  text-align: left;
-  margin: 0.4rem 0;
+  margin-bottom: 0.8rem;
+  text-align: left;        /* ✔ texto alineado a la izquierda */
+  padding-left: 1.6rem;    /* ✔ espacio para el check */
+  padding-right: 0;
+  position: relative;
+  color: #e2e2e2;
+  font-size: 0.95rem;
 }
 
-.fa-check {
-  color: #00ff99;
-  margin-right: 0.5rem;
+ul li::before {
+  content: '✔';
+  position: absolute;
+  left: 0;                 /* ✔ check a la izquierda */
+  color: #00ff88;
+  font-weight: bold;
 }
 
-/* ===== CTA ===== */
-.cta {
-  background: #111;
-  padding: 3rem 1rem;
+/* DESTACADO */
+.destacado {
+  border: 2px solid #00ff88;
+  transform: scale(1.04);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.destacado:hover {
+  transform: translateY(-8px) scale(1.04);
+  box-shadow: 0 12px 35px rgba(0,255,136,0.3);
+}
+
+.badge {
+  position: absolute;
+  top: -14px;
+  right: 20px;
+  background: #00ff88;
+  color: #000;
+  padding: 6px 12px;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  box-shadow: 0 0 10px rgba(0,255,136,0.5);
+}
+
+/* CTA LIMA */
+.cta-lima {
+  background: #0f0f0f;
+  color: #fff;
+  width: 80%;
+  padding: 1rem 1rem;
   text-align: center;
   border-radius: 1rem;
-  width: 80%;
   margin: 3rem auto;
 }
 
-.cta span {
-  color: #00ff99;
+.cta-lima h2 {
+  margin-bottom: 0.5rem;  /* antes era como 2rem por defecto */
+}
+
+.cta-lima p {
+  margin-top: 0;          /* elimina salto extra */
+}
+
+.cta-lima h2 span {
+  color: #00ff88;
+}
+
+.cta-lima h2 span {
+  color: #00ff88;
+}
+
+/* FOOTER */
+.footer {
+  background: #0d0d0d;
+  color: #ccc;
+  padding: 4rem 2rem;
+  text-align: left;
+  border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+.footer-contenedor {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.footer-col h4 {
+  color: #fff;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.footer-col ul li {
+  margin-bottom: 0.5rem;
+  color: #aaa;
+  transition: 0.3s;
+}
+
+.footer-col ul li:hover {
+  color: #00ff88;
+  cursor: pointer;
+  padding-left: 4px;
+}
+
+.footer p {
+  margin: 0.6rem 0;
+}
+
+copyright {
+  text-align: center;
+  color: #777;
 }
