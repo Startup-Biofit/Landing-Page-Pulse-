@@ -60,6 +60,15 @@ h1 {
   text-align: left;
 }
 
+.comillas-icon {
+  width: 26px;
+  height: auto;
+  margin-top: 0.3rem;
+  display: block;
+  margin-right: auto;    /* Se alinea a la derecha como las estrellitas */
+  opacity: 0.95;
+}
+
 .avatar {
   width: 55px;
   height: 55px;
