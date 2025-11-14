@@ -1,0 +1,108 @@
+/* FUENTE GLOBAL */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* CONFIGURACIÓN GENERAL */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background-color: #fff;
+  color: #222;
+  text-align: center;
+}
+
+.testimonials-section {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 60px 0;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: #666;
+  font-size: 1.05rem;
+  margin-bottom: 40px;
+}
+
+.category-title {
+  background: #e3f7ea;
+  color: #0f9d58;
+  padding: 8px 16px;
+  width: fit-content;
+  margin: 40px auto 20px;
+  font-weight: 600;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px; 
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.testimonial-card {
+  width: 450px;
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.12);
+  text-align: left;
+}
+
+.comillas-icon {
+  width: 26px;
+  height: auto;
+  margin-top: 0.3rem;
+  display: block;
+  margin-right: auto;    /* Se alinea a la derecha como las estrellitas */
+  opacity: 0.95;
+}
+
+.avatar {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+h3 {
+  margin: 0;
+  font-weight: 600;
+}
+
+.role {
+  font-size: 0.9rem;
+  color: #777;
+  margin: 2px 0 6px;
+}
+
+.location {
+  font-size: 0.85rem;
+  color: #0f9d58;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.stars {
+  color: #f4c430;
+  font-size: 1.1rem;
+  margin: 10px 0;
+}
+
+.comment {
+  font-size: 0.92rem;
+  color: #444;
+  line-height: 1.45;
+}
