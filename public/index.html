@@ -1,90 +1,165 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pulse+ Fitness</title>
-  <link rel="stylesheet" href="assets/styles/styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pulse Fitness</title>
+  <link rel="stylesheet" href="assets/styles/seccion-beneficios/styles.css">
+
+  <!-- ICONOS LUCIDE -->
+  <script type="module">
+    import { createIcons, icons } from 'https://cdn.jsdelivr.net/npm/lucide@latest/dist/lucide.esm.js';
+    createIcons({ icons });
+  </script>
+
+  <!-- FUENTE -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-  <!-- BENEFICIOS -->
-  <section class="benefits-section">
+  <!-- BENEFICIOS COMPARTIDOS -->
+  <section class="beneficios">
     <h2>Beneficios compartidos</h2>
-    <div class="benefits">
-      <div class="benefit-item">✔ IA Avanzada</div>
-      <div class="benefit-item">✔ VIP Comunidad</div>
-      <div class="benefit-item">✔ Control Calórico</div>
-      <div class="benefit-item">✔ Sincronización</div>
+
+    <div class="beneficios-grid">
+      <div class="beneficio-item">
+        <i data-lucide="bot"></i>
+        <h4>IA Avanzada</h4>
+        <p>Rutinas personalizadas con IA en tiempo real.</p>
+      </div>
+
+      <div class="beneficio-item">
+        <i data-lucide="vip"></i>
+        <h4>VIP Compartido</h4>
+        <p>Planes únicos que podrás compartir con quien quieras.</p>
+      </div>
+
+      <div class="beneficio-item">
+        <i data-lucide="salad"></i>
+        <h4>Control Calórico</h4>
+        <p>Mide tus calorías en segundos con exactitud.</p>
+      </div>
+
+      <div class="beneficio-item">
+        <i data-lucide="dumbbell"></i>
+        <h4>Sincronización</h4>
+        <p>Todo conectado entre móvil, web y smartwatch.</p>
+      </div>
     </div>
   </section>
 
-  <!-- ENTRENA -->
-  <section class="train-section">
+  <!-- ENTRENA DONDE TE SIENTAS MEJOR -->
+  <section class="entrena">
     <h2>Entrena donde te sientas mejor</h2>
-    <p>Pulso se adapta a tu estilo de vida. Desde tu hogar hasta el gimnasio...</p>
+    <p class="subtexto">Pulse se adapta a tu estilo de vida. Desde tu hogar hasta el gym más equipado, tu entrenamiento personalizado te sigue a donde vayas.</p>
 
-    <div class="train-cards">
+    <div class="cards-entrena">
+
       <div class="card">
-        <img src="https://images.pexels.com/photos/6453397/pexels-photo-6453397.jpeg" />
-        <div class="card-content">
-          <h3>En el Gym</h3>
-          <p>Programas personalizados para gimnasio...</p>
+        <img src="assets/images/en-gym.png" alt="Gym">
+        <div class="contenido">
+          <h3><i data-lucide="dumbbell"></i> En el Gym</h3>
+          <p>Planes optimizados para máquinas de gimnasio y pesas libres, con instrucciones guiadas.</p>
         </div>
       </div>
 
       <div class="card">
-        <img src="https://images.pexels.com/photos/416778/pexels-photo-416778.jpeg" />
-        <div class="card-content">
-          <h3>En Casa</h3>
-          <p>Entrena desde la comodidad de tu hogar...</p>
+        <img src="assets/images/en-casa.png" alt="Casa">
+        <div class="contenido">
+          <h3><i data-lucide="home"></i> En Casa</h3>
+          <p>Entrena sin equipos o con lo que tengas disponible. Rutinas adaptadas a tu espacio.</p>
         </div>
       </div>
 
       <div class="card">
-        <img src="https://images.pexels.com/photos/1199607/pexels-photo-1199607.jpeg" />
-        <div class="card-content">
-          <h3>Al Aire Libre</h3>
-          <p>Ejercítate en parques y espacios abiertos...</p>
+        <img src="assets/images/aire-libre.png" alt="Aire libre">
+        <div class="contenido">
+          <h3><i data-lucide="tree-pine"></i> Al Aire Libre</h3>
+          <p>Cardio, running, caminatas y entrenamientos funcionales donde quieras.</p>
         </div>
       </div>
+
     </div>
   </section>
 
   <!-- CONTROL NUTRICIONAL -->
-  <section class="nutrition-section">
-    <div class="nutrition-list">
-      <div class="nutrition-item">Calorías</div>
-      <div class="nutrition-item">Proteínas</div>
-      <div class="nutrition-item">Carbohidratos</div>
-      <div class="nutrition-item">Grasas</div>
+  <section class="nutricion">
+    <div class="nutricion-contenido">
+      <div class="nutricion-textos">
+        <h2>Control nutricional donde vayas</h2>
+        <p>Registra calorías, macros, y planes alimentarios completos. Gestión precisa para tus objetivos.</p>
+
+        <div class="nutri-grid">
+
+          <div class="nutri-item">
+            <i data-lucide="flame"></i>
+            <h4>Calorías</h4>
+            <p>Control exacto diario.</p>
+          </div>
+
+          <div class="nutri-item">
+            <i data-lucide="egg"></i>
+            <h4>Proteínas</h4>
+            <p>Planifica tus porciones.</p>
+          </div>
+
+          <div class="nutri-item">
+            <i data-lucide="croissant"></i>
+            <h4>Carbohidratos</h4>
+            <p>Distribución ideal por comida.</p>
+          </div>
+
+          <div class="nutri-item">
+            <i data-lucide="beef"></i>
+            <h4>Grasas</h4>
+            <p>Balance sin excesos.</p>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="nutricion-img">
+        <img src="assets/images/control-nutricional.png" alt="Proteína">
+      </div>
     </div>
-    <img class="nutrition-img" src="https://images.pexels.com/photos/932587/pexels-photo-932587.jpeg" />
   </section>
 
   <!-- REVOLUCIÓN FITNESS -->
-  <section class="revolution">
-    <h2>Revolucionando el fitness en <span>Lima</span></h2>
-  </section>
+  <section class="revolucion">
 
-  <div class="stats">
-    <div class="stat-box">
-      <h2>100%</h2>
-      <p>Lo que te Conviene</p>
+    <h2>Revolucionando el fitness en <span class="verde">Lima</span></h2>
+    <p class="subtexto">Sistema web y móvil que resuelve la necesidad de ejercicio efectivo mediante tecnología avanzada.</p>
+
+    <div class="revol-grid">
+
+      <div class="revol-card">
+        <i data-lucide="brain-circuit"></i>
+        <h3>100%</h3>
+        <p>La IA te conoce y adapta tus entrenamientos de forma automática.</p>
+      </div>
+
+      <div class="revol-card">
+        <i data-lucide="smile"></i>
+        <h3>98%</h3>
+        <p>Experiencias satisfactorias entre usuarios activos.</p>
+      </div>
+
+      <div class="revol-card">
+        <i data-lucide="heart-pulse"></i>
+        <h3>95%</h3>
+        <p>Mejoran su salud física en menos de 8 semanas.</p>
+      </div>
+
+      <div class="revol-card">
+        <i data-lucide="users"></i>
+        <h3>Para Todos</h3>
+        <p>Planes diseñados para cualquier edad o condición física.</p>
+      </div>
+
     </div>
-    <div class="stat-box">
-      <h2>98%</h2>
-      <p>Experiencia de Usuarios</p>
-    </div>
-    <div class="stat-box">
-      <h2>95%</h2>
-      <p>Resultados Garantizados</p>
-    </div>
-    <div class="stat-box">
-      <h2>∞</h2>
-      <p>Para Todos</p>
-    </div>
-  </div>
+
+  </section>
 
 </body>
 </html>

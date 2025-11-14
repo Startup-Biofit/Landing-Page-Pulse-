@@ -1,0 +1,262 @@
+/* CONFIGURACIÓN GENERAL */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff;
+  color: #222;
+  text-align: center;
+}
+
+
+/* ============ BENEFICIOS ============ */
+.beneficios{
+  padding:60px 10%;
+  background:#f0f7f2;
+}
+
+.beneficios h2{
+  font-size:28px;
+  font-weight:700;
+  margin-bottom:30px;
+}
+
+.beneficios-grid{
+  display:flex;
+  justify-content:center;
+  gap:40px;
+  flex-wrap:wrap;
+}
+
+.beneficio-item{
+  width:250px;
+  background:white;
+  padding:20px;
+  border-radius:12px;
+  box-shadow:0 4px 14px rgba(0,0,0,0.07);
+}
+
+.beneficio-item i{
+  width:32px;
+  height:32px;
+  color:#2fd450;
+}
+
+.beneficio-item h4{
+  margin:10px 0 5px;
+  font-weight:600;
+  font-size:17px;
+}
+
+.beneficio-item p{
+  font-size:14px;
+  color:#444;
+}
+
+
+/* ============ ENTRENA ============ */
+.entrena{
+  padding:70px 10%;
+}
+
+.entrena h2{
+  font-size:32px;
+  font-weight:700;
+}
+
+.subtexto{
+  margin-top:10px;
+  color:#666;
+  max-width:700px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.cards-entrena{
+  margin-top:40px;
+  display:flex;
+  gap:25px;
+  justify-content:center;
+  flex-wrap:wrap;
+}
+
+.card{
+  width:320px;
+  background:white;
+  border-radius:14px;
+  overflow:hidden;
+  box-shadow:0 4px 15px rgba(0,0,0,0.08);
+  cursor:pointer;
+  transition:.2s;
+}
+
+.card img{
+  width:100%;
+  height:200px;
+  object-fit:cover;
+}
+
+.card .contenido{
+  padding:18px;
+  text-align:left;
+}
+
+.card h3{
+  font-size:19px;
+  font-weight:600;
+  display:flex;
+  align-items:center;
+  gap:8px;
+}
+
+.card i{
+  width:20px;
+  height:20px;
+  color:#2fd450;
+}
+
+.card p{
+  margin-top:6px;
+  color:#555;
+  font-size:14px;
+}
+
+.card:hover{
+  transform:translateY(-4px);
+}
+
+
+/* ============ NUTRICIÓN ============ */
+.nutricion{
+  padding:70px 10%;
+  background:#f0f7f2;
+}
+
+.nutricion-contenido{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:40px;
+}
+
+.nutricion-textos{
+  width:50%;
+  text-align:left;
+}
+
+.nutricion-textos h2{
+  font-size:30px;
+  font-weight:700;
+}
+
+.nutri-grid{
+  display:grid;
+  grid-template-columns:repeat(2, 1fr);
+  gap:25px;
+  margin-top:30px;
+}
+
+.nutri-item{
+  background:white;
+  border-radius:12px;
+  padding:18px;
+  box-shadow:0 4px 14px rgba(0,0,0,0.07);
+}
+
+.nutri-item i{
+  width:26px;
+  height:26px;
+  color:#41ee64;
+}
+
+.nutricion-img img{
+  width:420px;
+  border-radius:12px;
+}
+
+
+/* ====================================================
+   📌 LÍNEA VERDE DIVISORA ANTES DE "REVOLUCIONANDO..."
+   ==================================================== */
+
+.revolucion {
+  padding: 70px 20%;
+  position:relative;
+}
+
+.revolucion::before {
+  content:"";
+  width:100%;
+  height:5px;
+  background:#2fd450;
+  position:absolute;
+  top:0;
+  left:40%;
+  transform:translateX(-40%);
+  border-radius:10px;
+}
+
+
+/* ============ REVOLUCIÓN FITNESS ============ */
+.revolucion h2{
+  font-size:32px;
+  font-weight:700;
+  margin-top:25px;
+}
+
+.revolucion .verde{
+  color:#2fd450;
+}
+
+.revol-grid{
+  margin-top:40px;
+  display:flex;
+  gap:25px;
+  justify-content:center;
+  flex-wrap:wrap;
+}
+
+.revol-card{
+  width:230px;
+  background:white;
+  border-radius:12px;
+  padding:25px;
+  box-shadow:0 4px 14px rgba(0,0,0,0.08);
+}
+
+.revol-card i{
+  width:32px;
+  height:32px;
+  color:#2fd450;
+}
+
+.revol-card h3{
+  font-size:26px;
+  margin:10px 0;
+  color:#2fd450;
+}
+
+.revol-card p{
+  font-size:14px;
+  color:#555;
+}
+
+
+/* ============ RESPONSIVE ============ */
+@media(max-width:900px){
+  .nutricion-contenido{
+    flex-direction:column;
+    text-align:center;
+  }
+  .nutricion-textos, .nutricion-img{
+    width:100%;
+    text-align:center;
+  }
+}
+
