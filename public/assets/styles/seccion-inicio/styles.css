@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background-color: #fff;
+  color: #222;
+  text-align: center;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 2rem;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header .logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #00b359;
+}
+
+header nav a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: #222;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+header nav a:hover {
+  color: #00b359;
+}
+
+header .actions .btn {
+  padding: 0.5rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-left: 0.5rem;
+}
+
+header .btn-outline:hover {
+  background-color: #00b359;
+  color: #fff;
+}
+
+header .btn-green:hover {
+  background-color: #007a33;
+}
+
+/* HERO */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5rem 2rem;
+  gap: 2rem;
+  background: linear-gradient(135deg, #f0fdf4, #e0f7f1);
+}
+
+.hero .badge {
+  font-size: 0.9rem;
+  color: #007a33;
+  font-weight: 500;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #007a33;
+  margin: 1rem 0;
+}
+
+.hero h1 span {
+  color: #00b359;
+}
+
+.icono-brillo {
+  font-size: 2.5rem;
+  color: #00b359;
+  filter: drop-shadow(0 0 8px #00e676);
+  animation: pulse 2s infinite alternate;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); opacity: 0.9; }
+  100% { transform: scale(1.2); opacity: 1; }
+}
+
+.hero .lead {
+  font-size: 1.1rem;
+  color: #222;
+  max-width: 650px;
+  margin: 0 auto 2rem auto;
+  line-height: 1.6;
+}
+
+/* MÉTRICAS */
+.metrics {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.metrics .metric {
+  text-align: center;
+}
+
+.metrics .metric strong {
+  font-size: 1.5rem;
+  display: block;
+  color: #00b359;
+}
+
+.metrics .metric span {
+  font-size: 0.95rem;
+  color: #222;
+}
+
+/* BOTONES DE TIENDA */
+.store-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.store-buttons img {
+  max-width: 140px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.store-buttons img:hover {
+  transform: scale(1.05);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .metrics {
+    flex-direction: column;
+  }
+
+  .store-buttons img {
+    max-width: 120px;
+  }
+}
+/* Logo en header */
+header .logo {
+  display: flex;
+  align-items: center;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #00b359;
+  gap: 0.5rem; /* espacio entre logo y texto */
+}
+
+header .logo-img {
+  width: 100px;       /* tamaño del logo */
+  height: auto;
+}
+
+/* Botones header unificados */
+.actions .btn-header {
+  font-family: 'Poppins', sans-serif; /* misma tipografía que toda la página */
+  font-weight: 600;
+  padding: 0.6rem 1.8rem;
+  border-radius: 10px;
+  border: 2px solid #00b359;
+  background-color: #00b359;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-left: 0.5rem;
+}
+
+.actions .btn-header:hover {
+  background-color: #007a33;
+  border-color: #007a33;
+  transform: translateY(-2px);
+}
