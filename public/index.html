@@ -1,20 +1,14 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pulse Fitness</title>
   <link rel="stylesheet" href="assets/styles/seccion-beneficios/styles.css">
 
-  <!-- ICONOS LUCIDE -->
-  <script type="module">
-    import { createIcons, icons } from 'https://cdn.jsdelivr.net/npm/lucide@latest/dist/lucide.esm.js';
-    createIcons({ icons });
-  </script>
-
-  <!-- FUENTE -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
+
 
 <body>
 
@@ -23,30 +17,56 @@
     <h2>Beneficios compartidos</h2>
 
     <div class="beneficios-grid">
-      <div class="beneficio-item">
-        <i data-lucide="bot"></i>
-        <h4>IA Avanzada</h4>
-        <p>Rutinas personalizadas con IA en tiempo real.</p>
-      </div>
 
-      <div class="beneficio-item">
-        <i data-lucide="vip"></i>
-        <h4>VIP Compartido</h4>
-        <p>Planes únicos que podrás compartir con quien quieras.</p>
-      </div>
+  <div class="beneficio-item">
+    <h4>
+      <!-- Icono de Robot para IA -->
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#00B050" stroke-width="2" style="margin-right:8px; vertical-align:middle;">
+        <path d="M12 2a5 5 0 0 1 5 5v1a5 5 0 0 1-10 0V7a5 5 0 0 1 5-5z"></path>
+        <path d="M6 14v7h12v-7"></path>
+      </svg>
+      IA Avanzada
+    </h4>
+    <p>Rutinas personalizadas con IA en tiempo real.</p>
+  </div>
 
-      <div class="beneficio-item">
-        <i data-lucide="salad"></i>
-        <h4>Control Calórico</h4>
-        <p>Mide tus calorías en segundos con exactitud.</p>
-      </div>
+  <div class="beneficio-item">
+    <h4>
+      <!-- Icono de Estrella para VIP -->
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#00B050" stroke-width="2" style="margin-right:8px; vertical-align:middle;">
+        <path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7z"></path>
+      </svg>
+      VIP Compartido
+    </h4>
+    <p>Planes únicos que podrás compartir con quien quieras.</p>
+  </div>
 
-      <div class="beneficio-item">
-        <i data-lucide="dumbbell"></i>
-        <h4>Sincronización</h4>
-        <p>Todo conectado entre móvil, web y smartwatch.</p>
-      </div>
-    </div>
+  <div class="beneficio-item">
+    <h4>
+      <!-- Icono de Lista para Control Calórico -->
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#00B050" stroke-width="2" style="margin-right:8px; vertical-align:middle;">
+        <path d="M4 4h16v2H4z"></path>
+        <path d="M4 8h16v2H4z"></path>
+        <path d="M4 12h16v2H4z"></path>
+      </svg>
+      Control Calórico
+    </h4>
+    <p>Mide tus calorías en segundos con exactitud.</p>
+  </div>
+
+  <div class="beneficio-item">
+    <h4>
+      <!-- Icono de Sincronización -->
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#00B050" stroke-width="2" style="margin-right:8px; vertical-align:middle;">
+        <path d="M12 2l6 6-6 6-6-6z"></path>
+        <path d="M12 14v8"></path>
+      </svg>
+      Sincronización
+    </h4>
+    <p>Todo conectado entre móvil, web y smartwatch.</p>
+  </div>
+
+</div>
   </section>
 
   <!-- ENTRENA DONDE TE SIENTAS MEJOR -->
@@ -85,45 +105,66 @@
 
   <!-- CONTROL NUTRICIONAL -->
   <section class="nutricion">
+  <div class="nutricion-cuadro">
     <div class="nutricion-contenido">
       <div class="nutricion-textos">
         <h2>Control nutricional donde vayas</h2>
         <p>Registra calorías, macros, y planes alimentarios completos. Gestión precisa para tus objetivos.</p>
 
-        <div class="nutri-grid">
+<div class="nutri-grid">
+  <div class="nutri-item">
+    <h4>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#00B050" stroke-width="2">
+        <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2z"></path>
+        <path d="M12 6v6l4 2"></path>
+      </svg>
+      Calorías
+    </h4>
+    <p>Control exacto diario.</p>
+  </div>
 
-          <div class="nutri-item">
-            <i data-lucide="flame"></i>
-            <h4>Calorías</h4>
-            <p>Control exacto diario.</p>
-          </div>
+  <div class="nutri-item">
+    <h4>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#00B050" stroke-width="2">
+        <circle cx="12" cy="12" r="10"></circle>
+        <path d="M8 12h8"></path>
+        <path d="M12 8v8"></path>
+      </svg>
+      Proteínas
+    </h4>
+    <p>Planifica tus porciones.</p>
+  </div>
 
-          <div class="nutri-item">
-            <i data-lucide="egg"></i>
-            <h4>Proteínas</h4>
-            <p>Planifica tus porciones.</p>
-          </div>
+  <div class="nutri-item">
+    <h4>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#00B050" stroke-width="2">
+        <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+        <path d="M3 9h18"></path>
+        <path d="M9 21V9"></path>
+      </svg>
+      Carbohidratos
+    </h4>
+    <p>Distribución ideal por comida.</p>
+  </div>
 
-          <div class="nutri-item">
-            <i data-lucide="croissant"></i>
-            <h4>Carbohidratos</h4>
-            <p>Distribución ideal por comida.</p>
-          </div>
-
-          <div class="nutri-item">
-            <i data-lucide="beef"></i>
-            <h4>Grasas</h4>
-            <p>Balance sin excesos.</p>
-          </div>
-
-        </div>
+  <div class="nutri-item">
+    <h4>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#00B050" stroke-width="2">
+        <path d="M12 2a10 10 0 0 1 10 10c0 5-10 10-10 10S2 17 2 12A10 10 0 0 1 12 2z"></path>
+      </svg>
+      Grasas
+    </h4>
+    <p>Balance sin excesos.</p>
+  </div>
+</div>
       </div>
 
       <div class="nutricion-img">
         <img src="assets/images/control-nutricional.png" alt="Proteína">
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
   <!-- REVOLUCIÓN FITNESS -->
   <section class="revolucion">

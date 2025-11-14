@@ -133,51 +133,73 @@ body {
 
 
 /* ============ NUTRICIÓN ============ */
-.nutricion{
-  padding:70px 10%;
-  background:#f0f7f2;
+.nutricion {
+  background-color: #fff; /* Fondo fuera del cuadro */
+  padding: 50px 0;
 }
 
-.nutricion-contenido{
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:40px;
+.nutricion-cuadro {
+  background-color: #6fc589; /* Verde del cuadro */
+  padding: 40px;
+  border-radius: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: #fff; /* Texto principal en blanco */
 }
 
-.nutricion-textos{
-  width:50%;
-  text-align:left;
+.nutricion-contenido {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
 }
 
-.nutricion-textos h2{
-  font-size:30px;
-  font-weight:700;
+.nutricion-textos {
+  flex: 1 1 500px;
+  margin-right: 20px;
 }
 
-.nutri-grid{
-  display:grid;
-  grid-template-columns:repeat(2, 1fr);
-  gap:25px;
-  margin-top:30px;
+.nutri-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+  gap: 20px; /* espacio entre cuadritos */
+  margin-top: 20px;
 }
 
-.nutri-item{
-  background:white;
-  border-radius:12px;
-  padding:18px;
-  box-shadow:0 4px 14px rgba(0,0,0,0.07);
+/* Cuadritos blancos para los items */
+.nutri-item {
+  background-color: #fff;
+  color: #222; /* Texto dentro del cuadrito */
+  padding: 20px;
+  border-radius: 15px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-.nutri-item i{
-  width:26px;
-  height:26px;
-  color:#41ee64;
+.nutri-item h4 {
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
 }
 
-.nutricion-img img{
-  width:420px;
-  border-radius:12px;
+.nutri-item svg {
+  stroke: #00B050; /* Iconos verdes dentro del cuadrito */
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.nutricion-img {
+  flex: 1 1 300px;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.nutricion-img img {
+  max-width: 100%;
+  border-radius: 15px;
 }
 
 
