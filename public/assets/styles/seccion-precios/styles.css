@@ -168,7 +168,8 @@ ul li::before {
 }
 
 .cta-lima h2 {
-  margin-bottom: 0.5rem;  /* antes era como 2rem por defecto */
+  margin-bottom: 0.5rem;
+  color: #ffffff;  /* antes era como 2rem por defecto */
 }
 
 .cta-lima p {

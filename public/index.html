@@ -1,30 +1,23 @@
 <!DOCTYPE html>
+
 <html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pulse+</title>
+  <title>PULSE+</title>
 
   <!-- Tipografía -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-  <!-- CSS Unificado -->
-  <link rel="stylesheet" href="assets/styles/styles.css">
-
-  <!-- Lucide Icons -->
-  <script type="module">
-    import { createIcons, icons } from "https://cdn.jsdelivr.net/npm/lucide@latest/dist/lucide.esm.js";
-    createIcons({ icons });
-  </script>
 </head>
 <body>
 
 <!-- =========================
-     HEADER
+    HEADER - MENÚ NAVEGACIÓN
 ========================= -->
 <header>
   <div class="logo">
-    <img src="assets/images/pulse_logo.png" alt="Pulse+ Logo" class="logo-img">
+    <img src="assets/images/logo.png" alt="Pulse+ Logo" class="logo-img">
     PULSE+
   </div>
 
@@ -73,12 +66,11 @@
   </div>
 </section>
 
-<!-- =========================
-     CARACTERÍSTICAS / EXPERIENCIA
-========================= -->
 <!-- SECCIÓN CARACTERÍSTICAS -->
+
 <link rel="stylesheet" href="assets/styles/seccion-caracteristicas/styles.css">
 <script type="module" src="assets/scripts/seccion-caracteristicas/main.js"></script>
+
 
 <section id="caracteristicas" class="experience-section">
   <h2>Elige tu experiencia <span>Pulse+</span></h2>
@@ -93,13 +85,16 @@
           <circle cx="12" cy="7" r="4"></circle>
         </svg>
       </div>
+
       <h3>Soy Usuario</h3>
       <p class="desc">Joven adulto que busca transformación física y mental</p>
+      
       <ul>
         <li>Registro personalizado Usuario Fit</li>
         <li>Entrenamientos VR y búsqueda inteligente</li>
         <li>Dashboard con IA y seguimiento total</li>
       </ul>
+
       <button class="btn" onclick="elegir('usuario')">Comenzar mi Transformación →</button>
       <p class="price">Gratis para empezar · Premium desde S/29.90/mes</p>
     </div>
@@ -112,13 +107,16 @@
           <circle cx="12" cy="7" r="4"></circle>
         </svg>
       </div>
+
       <h3>Soy Entrenador</h3>
       <p class="desc">Coach que gestiona clientes y optimiza rutinas</p>
+      
       <ul>
         <li>Panel multicliente y marketplace integrado</li>
         <li>Reportes PDF/Excel y métricas avanzadas</li>
         <li>Herramientas VR para demostraciones</li>
       </ul>
+
       <button class="btn" onclick="elegir('entrenador')">Gestionar mis Clientes →</button>
       <p class="price">Starter S/49.90/mes · Pro S/99.90/mes</p>
     </div>
@@ -126,7 +124,7 @@
 </section>
 
 <!-- =========================
-     JÓVENES ADULTOS
+     CARDS DE JÓVENES ADULTOS
 ========================= -->
 <section id="jovenes" class="joven-section">
   <h2>Dos interfaces, experiencias perfectas</h2>
@@ -171,7 +169,7 @@
 </section>
 
 <!-- =========================
-     ENTRENADORES / COACHES
+    CARDS DE ENTRENADORES / COACHES
 ========================= -->
 <section id="entrenadores" class="coach-section">
   <div class="coach-header">
@@ -228,13 +226,13 @@
   </div>
 </section>
 
-<!-- =========================
-     TESTIMONIOS
-========================= -->
+
 
 <!-- SECCIÓN TESTIMONIOS -->
+
 <link rel="stylesheet" href="assets/styles/feature-testimonios/styles.css">
 <script type="module" src="assets/scripts/feature-testimonios/main.js"></script>
+
 
 <section id="testimonios" class="testimonials-section">
   <h2>✨ Historias de éxito en Lima</h2>
@@ -287,9 +285,7 @@
   </div>
 </section>
 
-<!-- =========================
-     PRECIOS
-========================= -->
+
 
 <!-- SECCIÓN PRECIOS -->
 <link rel="stylesheet" href="assets/styles/seccion-precios/styles.css">
@@ -389,7 +385,7 @@
 </section>
 
 <!-- =========================
-     FOOTER
+     FOOTER DE LA PÁGINA
 ========================= -->
 <footer class="footer">
   <div class="footer-contenedor">
@@ -403,12 +399,12 @@
     <div class="footer-col">
       <h4>Landing Page</h4>
       <ul>
-        <li>Inicio</li>
-        <li>Caracteristicas</li>
-        <li>Beneficios</li>
-        <li>Precios</li>
-        <li>Testimonios</li>
-        <li>Footer</li>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#caracteristicas">Características</a></li>
+        <li><a href="#beneficios">Beneficios</a></li>
+        <li><a href="#precios">Precios</a></li>
+        <li><a href="#testimonios">Testimonios</a></li>
+        <li><a href="#footer">Footer</a></li>
       </ul>
     </div>
 
