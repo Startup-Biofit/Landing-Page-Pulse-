@@ -7,6 +7,28 @@
     <link rel="stylesheet" href="assets/styles/iniciar_sesion/iniciar-sesion.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
+
+<script>
+        document.querySelector('.register-form').addEventListener('submit', function(event) {
+            // 1. Captura el valor del nombre
+            const fullNameInput = document.getElementById('full-name');
+            const userName = fullNameInput.value;
+
+            if (userName) {
+                // 2. Guarda el nombre en LocalStorage
+                // El LocalStorage es una memoria simple del navegador (persiste entre páginas)
+                localStorage.setItem('currentUser', userName);
+                console.log("Nombre guardado:", userName);
+            } else {
+                // Esto no debería pasar si el campo es 'required', pero es una buena práctica
+                alert("Por favor, ingresa tu nombre completo.");
+                event.preventDefault(); // Evita el envío si falla
+            }
+            
+            // Permite el envío normal del formulario a 'seleccion.html'
+        });
+</script>
+
 <body>
 
     <div class="login-container">
@@ -23,7 +45,7 @@
         <form class="register-form" action="seleccion.html" method="POST"> 
             <div class="input-group">
                 <label for="full-name">Nombre completo</label>
-                <input type="text" id="full-name" placeholder="Romina Apaza Pacho" required>
+                <input type="text" id="full-name" name="full-name" placeholder="Romina Apaza Pacho" required>
             </div>
 
             <div class="input-group">
