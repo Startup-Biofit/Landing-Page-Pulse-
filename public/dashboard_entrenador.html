@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Entrenador - Pulse+</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles/entrenador_dashboard/style_entrenador.css">
+</head>
+<body>
+
+    <div class="app-container">
+        
+        <header>
+            <div class="header-left">
+                <div class="user-info">
+                    <div class="avatar trainer-avatar"><i class="fa-solid fa-user-tie"></i></div>
+                    <div class="greeting">
+                        <h1>Panel de Entrenador</h1>
+                        <h2>Coach Carlos</h2>
+                    </div>
+                </div>
+
+                <div class="action-buttons">
+                    <a href="dashboard_usuarioFit.html" class="btn-pill">Modo Usuario</a>
+                    <a href="#" class="icon-btn"><i class="fa-solid fa-gear"></i></a>
+                    <a href="#" class="icon-btn"><i class="fa-regular fa-calendar"></i></a>
+                </div>
+            </div>
+            
+            <a href="#" class="notification-btn">
+                <i class="fa-regular fa-bell"></i>
+            </a>
+        </header>
+
+        <div class="left-column">
+            
+            <div class="cards-row">
+                <a href="panel-clientes.html" class="card dark-gray-card">
+                    <h3>Clientes</h3>
+                    <span>Gestionar cartera</span>
+                    <div class="card-icon"><i class="fa-solid fa-users"></i></div>
+                </a>
+
+                <a href="#" class="card dark-gray-card">
+                    <h3>Agenda</h3>
+                    <span>Ver calendario</span>
+                    <div class="card-icon"><i class="fa-regular fa-calendar-check"></i></div>
+                </a>
+            </div>
+
+            <div class="activity-section">
+                <h3 class="section-title">Gestión Rápida</h3>
+                
+                <div class="buttons-list">
+                    
+                    <a href="#" class="white-long-btn">
+                        <div class="btn-content">
+                            <i class="fa-solid fa-inbox icon-circle"></i>
+                            <span>Solicitudes Pendientes</span>
+                        </div>
+                        <i class="fa-solid fa-chevron-right arrow-icon"></i>
+                    </a>
+                    
+                    <a href="#" class="white-long-btn">
+                        <div class="btn-content">
+                            <i class="fa-solid fa-user-group icon-circle"></i>
+                            <span>Clientes Activos</span>
+                        </div>
+                        <i class="fa-solid fa-chevron-right arrow-icon"></i>
+                    </a>
+
+                    <a href="#" class="white-long-btn">
+                        <div class="btn-content">
+                            <i class="fa-solid fa-chart-pie icon-circle"></i>
+                            <span>Reportes</span>
+                        </div>
+                        <i class="fa-solid fa-chevron-right arrow-icon"></i>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="right-column">
+            <div class="next-session-card">
+                <div class="ns-top">
+                    <div class="ns-header">
+                        <span>Próxima Clase</span>
+                        <span class="ns-badge">18:00</span>
+                    </div>
+                    <div class="ns-subtitle">Grupo A - Crossfit</div>
+                </div>
+                
+                <div class="dark-placeholder">
+                    <i class="fa-solid fa-stopwatch"></i>
+                </div>
+
+                <a href="#" class="btn-optimize">
+                    <i class="fa-solid fa-pen-to-square"></i> Editar Sesión
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <nav class="bottom-nav">
+        <a href="#" class="nav-item active"><i class="fa-solid fa-house"></i></a>
+        <a href="#" class="nav-item"><i class="fa-solid fa-clipboard-list"></i></a>
+        <a href="#" class="nav-item"><i class="fa-solid fa-users-gear"></i></a> <a href="#" class="nav-item"><i class="fa-regular fa-comment-dots"></i></a>
+        <a href="#" class="nav-item"><i class="fa-regular fa-id-card"></i></a>
+    </nav>
+
+</body>
+</html>

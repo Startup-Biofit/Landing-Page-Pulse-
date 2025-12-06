@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pulse+ | Nutrición</title>
+    <link rel="stylesheet" href="assets/styles/plan-Integral/plan-integral.css">
+    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <div class="nutrition-container training-container">
+        
+        <div class="top-bar">
+            <a href="plan-integral.html" class="back-link-plan">
+                <span class="material-icons">arrow_back</span> Volver
+            </a>
+            <div class="top-icons">
+                <span class="material-icons notification-icon">notifications</span>
+                <div class="health-icon-container">
+                    <img src="assets/images/mini_logo.png" alt="Logo de Pulse+" class="heart-icon-plan">
+                </div>
+            </div>
+        </div>
+
+        <div class="training-header">
+            <div class="training-icon-box primary-green-bg">
+                <i class="fas fa-apple-alt icon-dark"></i>
+            </div>
+            <div class="training-title-group">
+                <h1 class="training-main-title">Nutrición</h1>
+                <p class="training-subtitle">Combustible para tu cuerpo, progreso constante</p>
+            </div>
+        </div>
+        
+        <div class="training-content">
+            
+            <div class="routine-section-left">
+                <h2 class="routine-title">Tu Resumen Nutricional de HOY</h2>
+
+                <div class="macro-summary-card">
+                    <p class="macro-target">Objetivo Calórico: <span class="highlight-green">2800 kcal</span></p>
+                    <div class="progress-info">
+                        <span class="calories-consumed">1550 kcal consumidas</span>
+                        <span class="calories-remaining">Quedan 1250 kcal</span>
+                    </div>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar" style="width: 55%;"></div>
+                    </div>
+                </div>
+
+                <h3 class="section-subtitle">Distribución de Macronutrientes</h3>
+                
+                <div class="macro-list">
+                    <div class="macro-item">
+                        <span class="macro-name">Proteínas</span>
+                        <span class="macro-progress">120g / 180g</span>
+                        <div class="macro-bar protein-bar" style="width: 66%;"></div>
+                    </div>
+                    <div class="macro-item">
+                        <span class="macro-name">Carbohidratos</span>
+                        <span class="macro-progress">180g / 350g</span>
+                        <div class="macro-bar carb-bar" style="width: 51%;"></div>
+                    </div>
+                    <div class="macro-item">
+                        <span class="macro-name">Grasas</span>
+                        <span class="macro-progress">45g / 75g</span>
+                        <div class="macro-bar fat-bar" style="width: 60%;"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="recommendations-section-right">
+                <h2 class="recommendations-title-section">REGISTRAR COMIDA</h2>
+
+                <div class="meals-list">
+                    <div class="meal-item">
+                        <span class="meal-time">Desayuno</span>
+                        <span class="meal-calories">500 kcal</span>
+                        <button class="log-button primary-green-bg">Editar</button>
+                    </div>
+                    <div class="meal-item">
+                        <span class="meal-time">Almuerzo</span>
+                        <span class="meal-calories">650 kcal</span>
+                        <button class="log-button primary-green-bg">Editar</button>
+                    </div>
+                    <div class="meal-item pending">
+                        <span class="meal-time">Cena</span>
+                        <span class="meal-calories">-</span>
+                        <button class="log-button">Registrar</button>
+                    </div>
+                </div>
+                
+                <button class="action-button start-routine-button">Calcular Nuevos Macros</button>
+                
+                <p class="consult-ia-label">Consultar con IA</p>
+                <div class="mic-icon-container-footer">
+                    <span class="material-icons mic-icon">mic</span>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+</body>
+</html>

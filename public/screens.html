@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Plan Personalizado</title>
+    <link rel="stylesheet" href="assets/styles/screens/screens.css"> 
+</head>
+<body>
+
+<div class="container" id="screen-sexo">
+    <h2>Selecciona tu sexo</h2>
+
+    <div class="options-grid">
+        <div class="option-card inactive">
+            <i class="icon-avatar male">🧍</i>
+            <h3>Masculino</h3>
+            <p>Personalizado para fisiología masculina</p>
+        </div>
+        <div class="option-card active-green" data-value="femenino">
+            <i class="icon-avatar female">🧍</i>
+            <h3>Femenino</h3>
+            <p>Personalizado para fisiología femenina</p>
+        </div>
+    </div>
+
+    <button class="btn-continue">Continuar</button>
+</div>
+
+    <div class="container" id="screen-estatura">
+        <h2>¿Cuál es tu estatura?</h2>
+
+        <div class="unit-toggle">
+            <span class="unit-active">CM</span>
+            <span class="unit-inactive">FT</span>
+        </div>
+
+        <div class="slider-box">
+            <div class="value-display">1.65</div>
+            <div class="unit-text">metros</div>
+            
+            <div class="range-slider">
+                <input type="range" min="1.00" max="2.20" step="0.01" value="1.65" class="slider" data-unit="cm">
+            </div>
+        </div>
+
+        <button class="btn-continue">Continuar</button>
+    </div>
+
+    <div class="container" id="screen-peso">
+        <h2>¿Cuál es tu peso actual?</h2>
+
+        <div class="unit-toggle">
+            <span class="unit-active">KG</span>
+            <span class="unit-inactive">LB</span>
+        </div>
+
+        <div class="slider-box">
+            <div class="value-display">58</div>
+            <div class="unit-text">kilos</div>
+            
+            <div class="range-slider">
+                <input type="range" min="30" max="150" step="1" value="58" class="slider" data-unit="kg">
+            </div>
+        </div>
+
+        <button class="btn-continue">Continuar</button>
+    </div>
+
+    <div class="container" id="screen-actividad">
+        <h2>¿Cuál es tu nivel de actividad física?</h2>
+        <p class="subtitle">Esto nos ayuda a personalizar tu plan de entrenamiento</p>
+
+        <div class="options-list">
+            <div class="list-option inactive" data-value="sedentario">
+                <i class="icon-list">💧</i>
+                <div><h4>Sedentario</h4><p>Poco o ningún ejercicio</p></div>
+            </div>
+            <div class="list-option inactive" data-value="ligeramente-activo">
+                <i class="icon-list">📊</i>
+                <div><h4>Ligeramente activo</h4><p>Ejercicio ligero 1-3 días/semana</p></div>
+            </div>
+            <div class="list-option active-green-list" data-value="moderado">
+                <i class="icon-list">⚡</i>
+                <div><h4>Moderado</h4><p>Ejercicio moderado 3-5 días/semana</p></div>
+            </div>
+            <div class="list-option inactive" data-value="muy-activo">
+                <i class="icon-list">🏋️</i>
+                <div><h4>Muy activo</h4><p>Ejercicio intenso 6-7 días/semana</p></div>
+            </div>
+        </div>
+
+        <button class="btn-continue">Continuar</button>
+    </div>
+
+    <div class="container" id="screen-carga">
+        <div class="brain-animation">
+            <div class="pulse-ring ring-1"></div>
+            <div class="pulse-ring ring-2"></div>
+            <div class="pulse-ring ring-3"></div>
+            <div class="pulse-ring ring-4"></div> 
+            <div class="pulse-ring ring-5"></div>   <img src="assets/images/loguito.png" alt="Logo de Pulse+" class="center-icon">
+
+        </div>
+    <h1>Generando tu plan integral personalizado</h1>
+    <p class="loading-text">Analizando tus datos biométricos y preferencias</p>
+    
+    <p class="dot-animation-line"><span class="loading-dots"></span></p>
+</div>
+
+    <script src="assets/scripts/screens/screens.js"></script> 
+</body>
+</html>

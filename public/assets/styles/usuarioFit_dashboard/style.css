@@ -1,0 +1,244 @@
+:root {
+    --bg-dark: #050505;
+    --card-dark: #0a0a0a; /* Fondo del contenedor principal */
+    --neon-green: #00ff9d;
+    --text-white: #ffffff;
+    --text-gray: #a0a0a0;
+    --border-color: #333;
+}
+
+/* Reset básico para evitar desbordamientos */
+* { box-sizing: border-box; }
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-white);
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+a { text-decoration: none; color: inherit; cursor: pointer; transition: 0.2s; }
+
+/* --- CONTENEDOR PRINCIPAL CON GRID --- */
+.app-container {
+    width: 90%;
+    max-width: 1200px;
+    background-color: var(--card-dark); 
+    padding: 50px;
+    border-radius: 30px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    margin-bottom: 80px;
+    
+    /* GRID DESKTOP */
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* 2 partes Izq - 1 parte Der */
+    column-gap: 40px;
+    row-gap: 40px;
+    
+    /* Alineación de altura */
+    align-items: stretch; 
+}
+
+/* --- HEADER --- */
+header {
+    grid-column: 1 / -1; /* Ocupa todo el ancho */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.header-left { display: flex; flex-direction: column; gap: 20px; }
+.user-info { display: flex; align-items: center; gap: 15px; }
+
+.avatar {
+    width: 50px; height: 50px;
+    background-color: var(--neon-green);
+    border-radius: 14px;
+    display: flex; justify-content: center; align-items: center;
+    color: black; font-size: 1.5rem; flex-shrink: 0;
+}
+
+.greeting h1 { font-size: 1.1rem; margin: 0; color: var(--text-gray); font-weight: 400; }
+.greeting h2 { font-size: 1.8rem; margin: 0; font-weight: 700; }
+
+.action-buttons { display: flex; gap: 10px; }
+
+.btn-pill {
+    display: inline-flex; justify-content: center; align-items: center;
+    border: 1px solid var(--neon-green); color: var(--neon-green);
+    padding: 8px 25px; border-radius: 20px; font-size: 0.9rem;
+    white-space: nowrap;
+}
+.btn-pill:hover { background-color: var(--neon-green); color: black; }
+
+.icon-btn, .notification-btn {
+    display: inline-flex; justify-content: center; align-items: center;
+    background: transparent; border: 1px solid var(--border-color);
+    color: var(--neon-green); border-radius: 12px; flex-shrink: 0;
+}
+.icon-btn { width: 40px; height: 40px; }
+.notification-btn { width: 45px; height: 45px; border-radius: 50%; font-size: 1.2rem; }
+.icon-btn:hover, .notification-btn:hover { border-color: var(--neon-green); }
+
+
+/* --- COLUMNA IZQUIERDA --- */
+.left-column {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.cards-row { display: flex; gap: 20px; }
+
+.card {
+    background-color: white; color: black;
+    flex: 1; border-radius: 20px; padding: 25px; height: 140px;
+    position: relative; display: flex; flex-direction: column; justify-content: center;
+}
+.card:hover { transform: translateY(-5px); }
+.card h3 { margin: 0 0 5px 0; font-size: 1.4rem; }
+.card span { color: #666; font-size: 0.9rem; }
+
+.card-icon {
+    position: absolute; top: 20px; right: 20px;
+    background-color: var(--neon-green); width: 45px; height: 45px;
+    border-radius: 10px; display: flex; justify-content: center; align-items: center;
+    font-size: 1.2rem; box-shadow: 0 4px 15px rgba(0, 255, 157, 0.4);
+}
+
+.section-title { font-size: 1.4rem; margin-bottom: 20px; }
+.activity-list { display: flex; flex-direction: column; gap: 25px; }
+.activity-item { display: flex; flex-direction: column; gap: 10px; }
+.activity-header { display: flex; gap: 15px; align-items: center; }
+
+.a-icon {
+    width: 40px; height: 40px; background: rgba(255,255,255,0.05);
+    border-radius: 10px; color: var(--neon-green);
+    display: flex; justify-content: center; align-items: center;
+    flex-shrink: 0;
+}
+.a-info { flex: 1; display: flex; justify-content: space-between; font-weight: 600; font-size: 1.05rem; }
+.percentage { color: var(--neon-green); }
+.progress-bg { width: 100%; height: 8px; background: #333; border-radius: 4px; overflow: hidden; }
+.progress-fill { height: 100%; background: var(--neon-green); border-radius: 4px; box-shadow: 0 0 10px var(--neon-green); }
+
+
+/* --- COLUMNA DERECHA --- */
+.right-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Alinea al fondo en Desktop */
+}
+
+.next-session-card {
+    background: linear-gradient(180deg, #1a1a1a 0%, #0d0d0d 100%);
+    border: 1px solid #333;
+    border-radius: 24px;
+    padding: 30px;
+    display: flex; flex-direction: column; gap: 20px;
+}
+
+.ns-header { display: flex; justify-content: space-between; font-weight: 700; font-size: 1.1rem; }
+.ns-badge { background: rgba(0,255,157,0.2); color: var(--neon-green); padding: 5px 10px; border-radius: 8px; font-size: 0.8rem; }
+.ns-subtitle { color: var(--text-gray); font-size: 1rem; }
+
+.dark-placeholder {
+    height: 100px; display: flex; align-items: center; justify-content: center;
+    font-size: 3rem; color: #222; 
+}
+
+.btn-optimize {
+    display: flex; justify-content: center; align-items: center; gap: 10px;
+    background-color: var(--neon-green); color: black;
+    font-weight: 700; padding: 15px; border-radius: 15px; width: 100%;
+}
+.btn-optimize:hover { box-shadow: 0 0 20px rgba(0,255,157,0.6); }
+
+
+/* --- NAV INFERIOR --- */
+.bottom-nav {
+    position: fixed; bottom: 30px; left: 50%; transform: translateX(-50%);
+    background: rgba(20,20,20,0.95); backdrop-filter: blur(10px);
+    border: 1px solid #333; border-radius: 50px;
+    padding: 15px 40px; display: flex; gap: 40px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.6); z-index: 100;
+}
+.nav-item { color: #666; font-size: 1.4rem; display: flex; align-items: center; }
+.nav-item:hover, .nav-item.active { color: var(--neon-green); transform: scale(1.1); }
+
+
+/* =========================================
+   MEDIA QUERY: RESPONSIVE
+   ========================================= */
+
+/* Tablets (max 1024px) */
+@media (max-width: 1024px) {
+    .app-container {
+        padding: 30px; /* Menos padding */
+        column-gap: 20px; /* Columnas más juntas */
+    }
+}
+
+/* Móviles (max 768px) */
+@media (max-width: 768px) {
+    
+    /* 1. Contenedor Principal: Pasa a 1 Columna */
+    .app-container {
+        width: 100%;
+        padding: 20px;
+        grid-template-columns: 1fr; /* Una sola columna */
+        row-gap: 30px;
+        margin-bottom: 90px; /* Espacio para el nav */
+        border-radius: 0; /* Opcional: Quitar bordes redondos en móvil */
+        box-shadow: none;
+    }
+
+    /* 2. Header */
+    header {
+        flex-direction: column; /* Avatar arriba, botones abajo */
+        gap: 15px;
+    }
+    
+    .header-left { width: 100%; }
+    .action-buttons { 
+        justify-content: space-between; /* Botones distribuidos */
+        width: 100%;
+    }
+    
+    /* Mover la campana de notificación a la derecha absoluta */
+    .notification-btn {
+        position: absolute;
+        top: 25px;
+        right: 20px;
+    }
+
+    /* 3. Columna Izquierda */
+    .cards-row {
+        flex-direction: column; /* Tarjetas blancas apiladas */
+        gap: 15px;
+    }
+    
+    .card {
+        height: 120px; /* Un poco más compactas */
+    }
+
+    /* 4. Columna Derecha */
+    .right-column {
+        justify-content: flex-start; /* Ya no empujamos al fondo, sigue el flujo */
+        margin-top: 10px;
+    }
+
+    /* 5. Nav Inferior */
+    .bottom-nav {
+        width: 90%; /* Ajustar ancho */
+        padding: 15px 25px;
+        justify-content: space-between;
+        gap: 0; /* Dejar que space-between maneje el espacio */
+    }
+    .nav-item { font-size: 1.2rem; }
+}

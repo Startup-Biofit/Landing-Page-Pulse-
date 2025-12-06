@@ -1,0 +1,358 @@
+/* CONFIGURACIÓN GENERAL */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff;
+  color: #222;
+  text-align: center;
+}
+
+/* ============ BENEFICIOS ============ */
+.beneficios {
+  padding: 60px 10%;
+  background: #f0f7f2;
+}
+
+.beneficios h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.beneficios-grid {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.beneficio-item {
+  width: 250px;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.07);
+}
+
+.beneficio-item i {
+  font-size: 32px; /* Corregido de width/height a font-size para iconos de fuente */
+  color: #2fd450;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.beneficio-item h4 {
+  margin: 10px 0 5px;
+  font-weight: 600;
+  font-size: 17px;
+}
+
+.beneficio-item p {
+  font-size: 14px;
+  color: #444;
+}
+
+/* ============ ENTRENA ============ */
+.entrena {
+  padding: 70px 10%;
+}
+
+.entrena h2 {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.subtexto {
+  margin-top: 10px;
+  color: #666;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cards-entrena {
+  margin-top: 40px;
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 320px;
+  background: white;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  cursor: pointer;
+  transition: .2s;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card .contenido {
+  padding: 18px;
+  text-align: left;
+}
+
+.card h3 {
+  font-size: 19px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.card i {
+  font-size: 20px;
+  color: #2fd450;
+}
+
+.card p {
+  margin-top: 6px;
+  color: #555;
+  font-size: 14px;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+/* ============ NUTRICIÓN ============ */
+.nutricion {
+  background-color: #fff;
+  padding: 50px 0;
+}
+
+.nutricion-cuadro {
+  background-color: #6fc589;
+  padding: 40px;
+  border-radius: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 90%; /* Asegura margen en pantallas grandes */
+  color: #fff;
+}
+
+.nutricion-contenido {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center; /* Alineación vertical centrada */
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.nutricion-textos {
+  flex: 1 1 400px; /* Base flexible */
+}
+
+.nutri-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.nutri-item {
+  background-color: #fff;
+  color: #222;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.nutri-item h4 {
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+  gap: 10px;
+}
+
+.nutri-item svg {
+  stroke: #00B050;
+  width: 24px;
+  height: 24px;
+}
+
+.nutricion-img {
+  flex: 1 1 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.nutricion-img img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+
+/* ============ REVOLUCIÓN (Divisor y Contenido) ============ */
+.revolucion {
+  padding: 70px 10%; /* Ajustado padding lateral para consistencia */
+  position: relative;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.revolucion::before {
+  content: "";
+  width: 100px; /* Ancho fijo para la línea decorativa */
+  height: 5px;
+  background: #2fd450;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 10px;
+}
+
+.revolucion h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-top: 25px;
+}
+
+.revolucion .verde {
+  color: #2fd450;
+}
+
+.revol-grid {
+  margin-top: 40px;
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.revol-card {
+  width: 230px;
+  background: white;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.revol-card i {
+  font-size: 32px;
+  color: #2fd450;
+  margin-bottom: 10px;
+}
+
+.revol-card h3 {
+  font-size: 20px; /* Ajuste de tamaño para balance */
+  margin: 10px 0;
+  color: #2fd450;
+}
+
+.revol-card p {
+  font-size: 14px;
+  color: #555;
+}
+
+
+/* =========================================
+   MEDIA QUERY: RESPONSIVE
+   ========================================= */
+
+/* Tablets y Pantallas Medianas (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .entrena, .beneficios, .revolucion {
+    padding: 60px 5%;
+  }
+
+  .nutricion-cuadro {
+    width: 95%;
+    padding: 30px;
+  }
+}
+
+/* Tablets Pequeñas y Móviles Grandes (max-width: 768px) */
+@media (max-width: 768px) {
+  
+  /* Ajuste de Títulos */
+  .entrena h2, .beneficios h2, .revolucion h2 {
+    font-size: 26px;
+  }
+
+  /* --- Beneficios --- */
+  .beneficio-item {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  /* --- Entrena --- */
+  .card {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  /* --- Nutrición --- */
+  .nutricion-contenido {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nutricion-textos {
+    width: 100%;
+    flex: none;
+  }
+
+  .nutri-grid {
+    /* Mantenemos 2 columnas si el móvil es ancho, o pasamos a 1 */
+    grid-template-columns: 1fr 1fr; 
+  }
+
+  .nutri-item {
+    text-align: left; /* Mantener texto alineado a la izquierda para legibilidad */
+  }
+}
+
+/* Móviles Pequeños (max-width: 480px) */
+@media (max-width: 480px) {
+
+  /* Ajustes Generales */
+  .entrena, .beneficios, .revolucion {
+    padding: 40px 20px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  /* --- Nutrición --- */
+  .nutri-grid {
+    grid-template-columns: 1fr; /* 1 sola columna en pantallas muy pequeñas */
+  }
+
+  .nutricion-cuadro {
+    padding: 20px;
+  }
+
+  /* --- Revolución --- */
+  .revol-card {
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  /* --- Ajuste de línea divisora --- */
+  .revolucion::before {
+    width: 60px;
+  }
+}

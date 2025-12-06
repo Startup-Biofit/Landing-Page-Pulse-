@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* RESET BÁSICO */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background-color: #fff;
+  color: #222;
+  text-align: center;
+  overflow-x: hidden; 
+}
+
+/* =========================================
+   HEADER & NAVEGACIÓN
+   ========================================= */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 5%; 
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05); /* Sombra un poco más suave */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Logo */
+header .logo {
+  display: flex;
+  align-items: center;
+  font-size: 1.4rem; 
+  font-weight: 700;
+  color: #00b359;
+  gap: 0.5rem;
+  text-decoration: none; /* Asegura que no tenga subrayado si es un link */
+}
+
+header .logo-img {
+  width: 40px; /* Tamaño más realista para un icono de logo */
+  height: auto;
+}
+
+/* Navegación (Desktop) */
+header nav {
+  display: flex;
+  align-items: center;
+}
+
+header nav a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: #444;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  font-size: 0.95rem;
+  position: relative;
+}
+
+header nav a:hover {
+  color: #00b359;
+}
+
+/* Efecto hover sutil (subrayado animado) */
+header nav a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #00b359;
+  transition: width .3s;
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+}
+header nav a:hover::after {
+  width: 100%;
+}
+
+/* Botones Header */
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.actions .btn-header {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  padding: 0.6rem 1.4rem;
+  border-radius: 50px; /* Botones redondeados modernos */
+  border: 2px solid #00b359;
+  background-color: #00b359;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+  text-decoration: none; /* Por si usas <a> en lugar de <button> */
+  display: inline-block;
+}
+
+.actions .btn-header.secondary {
+  background-color: transparent;
+  color: #00b359;
+}
+
+.actions .btn-header:hover {
+  background-color: #008f47;
+  border-color: #008f47;
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 179, 89, 0.2);
+}
+
+/* --- BOTÓN HAMBURGUESA --- */
+.menu-toggle {
+  display: none; 
+  font-size: 1.6rem;
+  background: none;
+  border: none;
+  color: #333;
+  cursor: pointer;
+  padding: 5px;
+}
+
+
+/* =========================================
+   SECCIÓN HERO (INICIO)
+   ========================================= */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 6rem 2rem;
+  gap: 1.5rem;
+  /* Degradado más moderno y suave */
+  background: radial-gradient(circle at top, #f0fdf4, #fff); 
+  min-height: 80vh; /* Ocupa buena parte de la pantalla */
+}
+
+.hero .badge {
+  font-size: 0.85rem;
+  color: #007a33;
+  font-weight: 600;
+  background: #d1fae5; 
+  padding: 6px 16px;
+  border-radius: 30px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.hero h1 {
+  font-size: 3.5rem; /* Título grande e impactante */
+  font-weight: 800;
+  color: #1a1a1a;
+  margin: 0.5rem 0;
+  line-height: 1.1;
+  max-width: 900px;
+}
+
+.hero h1 span {
+  color: #00b359;
+  position: relative;
+  display: inline-block;
+}
+
+/* Icono animado */
+.icono-brillo {
+  font-size: 0.6em; /* Relativo al título */
+  vertical-align: top;
+  color: #00b359;
+  animation: pulse 2s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); opacity: 0.8; }
+  50% { transform: scale(1.2); opacity: 1; filter: drop-shadow(0 0 5px #00b359); }
+  100% { transform: scale(1); opacity: 0.8; }
+}
+
+.hero .lead {
+  font-size: 1.2rem;
+  color: #555;
+  max-width: 700px;
+  margin: 0 auto 1.5rem auto;
+  line-height: 1.6;
+}
+
+/* MÉTRICAS */
+.metrics {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  flex-wrap: wrap;
+  margin-bottom: 2.5rem;
+  padding: 20px;
+  border-top: 1px solid #eee; /* Separador visual */
+  border-bottom: 1px solid #eee;
+  width: 100%;
+  max-width: 800px;
+}
+
+.metrics .metric strong {
+  font-size: 2.2rem;
+  font-weight: 800;
+  display: block;
+  color: #1a1a1a;
+  line-height: 1;
+}
+
+.metrics .metric span {
+  font-size: 0.85rem;
+  color: #666;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 8px;
+  display: block;
+}
+
+/* BOTONES TIENDA */
+.store-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.store-buttons img {
+  width: 180px;       /* Ancho fijo */
+  height: 180px;       /* Alto fijo */
+  object-fit: contain; /* Ajusta la imagen dentro del contenedor sin deformar */
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.store-buttons img:hover {
+  transform: scale(1.05);
+}
+
+
+/* =========================================
+   MEDIA QUERY: RESPONSIVE (Móviles)
+   ========================================= */
+@media (max-width: 900px) {
+  /* Ajuste intermedio para tablets */
+  .hero h1 { font-size: 2.8rem; }
+}
+
+@media (max-width: 768px) {
+  
+  /* HEADER MÓVIL */
+  header {
+    padding: 1rem 1.5rem;
+    position: relative; /* Necesario para el menú absoluto */
+  }
+
+  /* Logo un poco más pequeño */
+  header .logo { font-size: 1.2rem; }
+  header .logo-img { width: 35px; }
+
+  /* Mostrar Toggle */
+  .menu-toggle { display: block; }
+
+  /* MENÚ MÓVIL DESPLEGABLE */
+  /* Nota: Para abrirlo necesitarás un pequeño script JS que añada la clase .active */
+  header nav {
+    display: none; /* Oculto por defecto */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    background: #fff;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+    padding: 20px;
+    border-top: 1px solid #f0f0f0;
+  }
+
+  /* Clase activa para JS */
+  header nav.active { display: flex; animation: slideDown 0.3s ease; }
+
+  @keyframes slideDown {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  header nav a {
+    margin: 10px 0;
+    font-size: 1.1rem;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  
+  header nav a:hover {
+    background-color: #f9f9f9; /* Feedback visual al tocar */
+  }
+
+  /* BOTONES DE ACCIÓN EN MÓVIL */
+  /* Los movemos visualmente dentro del flujo o los ajustamos */
+  .actions {
+    display: none; /* Ocultamos los botones del header superior */
+  }
+  
+  /* Sugerencia: Deberías añadir los botones Login/Registro DENTRO del <nav> en el HTML 
+     para que aparezcan en el menú desplegable en móvil. 
+     Si están dentro del nav, añade este estilo: */
+  header nav .btn-header {
+    margin-top: 15px;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* HERO MÓVIL */
+  .hero {
+    padding: 4rem 1.5rem;
+    text-align: center;
+    min-height: auto;
+  }
+
+  .hero h1 {
+    font-size: 2.2rem; /* Título optimizado para lectura móvil */
+  }
+
+  .hero .lead {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  /* Métricas apiladas o en grid 2x2 */
+  .metrics {
+    gap: 2rem;
+    padding: 15px 0;
+    justify-content: center;
+    border: none; /* Quitar bordes para limpieza */
+  }
+  
+  .metrics .metric {
+    min-width: 40%; /* Grid implícito de 2 columnas */
+  }
+
+  .store-buttons {
+    flex-direction: column; /* Botones uno encima del otro para facilitar el toque */
+    align-items: center;
+  }
+  
+  .store-buttons img {
+    height: 50px; /* Botones más grandes para dedos */
+    width: auto;
+  }
+}
+
+.footer-col ul li a {
+    color: inherit; /* O el código de color específico, por ejemplo: #ffffff; */
+    text-decoration: none; /* Opcional: Esto quita el subrayado si lo tienen */
+}
+
+/* Si quieres que se vuelvan del color del texto normal al pasar el mouse también */
+.footer-col ul li a:hover {
+    color: inherit;
+    text-decoration: none;
+}

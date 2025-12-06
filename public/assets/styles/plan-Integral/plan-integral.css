@@ -1,0 +1,368 @@
+/* Variables de color para consistencia con el diseño Pulse+ */
+:root {
+    --bg-color: #0d1117; 
+    --card-bg-color: #1a1f26; 
+    --primary-green: #00ff8c; 
+    --text-color: #f0f6fc; 
+    --label-color: #a0a8b3; 
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+}
+
+/* Para asegurar que no haya desbordamiento horizontal en móviles */
+* { box-sizing: border-box; }
+
+.plan-container {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+/* --- Barra Superior --- */
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.back-link-plan {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--primary-green);
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.back-link-plan .material-icons { margin-right: 5px; }
+
+.top-icons { display: flex; align-items: center; }
+
+.notification-icon {
+    font-size: 28px;
+    margin-right: 15px;
+    color: var(--label-color);
+    cursor: pointer;
+}
+
+.health-icon-container {
+    display: flex; justify-content: center; align-items: center;
+    width: 40px; height: 40px;
+    border: 2px solid var(--primary-green);
+    border-radius: 50%;
+}
+
+.heart-icon-plan { font-size: 22px; color: var(--primary-green); }
+
+/* --- Encabezado Principal del Plan --- */
+.plan-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.plan-document-icon {
+    display: flex; justify-content: center; align-items: center;
+    width: 55px; height: 55px;
+    background-color: var(--card-bg-color);
+    border-radius: 12px;
+    margin-right: 15px; flex-shrink: 0; /* Evita que se aplaste */
+}
+
+.plan-document-icon .fa-file-alt { font-size: 24px; color: var(--text-color); }
+
+.plan-main-title { font-size: 2.2em; font-weight: 800; margin: 0; line-height: 1.1; }
+.plan-subtitle { font-size: 1em; color: var(--label-color); margin: 0; margin-top: 5px;}
+
+/* --- Sección Rutina --- */
+.routine-section { margin-bottom: 35px; }
+.routine-title { font-size: 1.5em; font-weight: 700; margin-bottom: 10px; }
+.objective { font-size: 1em; color: var(--label-color); }
+.objective-label { display: block; color: var(--primary-green); font-weight: bold; margin-bottom: 5px; }
+
+/* --- Tarjetas de Detalle --- */
+.plan-details {
+    display: flex; flex-direction: column; gap: 15px;
+    margin-bottom: 100px;
+}
+
+.detail-card {
+    display: flex; align-items: center;
+    padding: 15px 20px;
+    background-color: var(--card-bg-color);
+    border-radius: 10px;
+    text-decoration: none;
+    color: var(--text-color);
+    transition: background-color 0.2s;
+}
+.detail-card:hover { background-color: #2a3038; }
+
+.detail-icon-box {
+    display: flex; justify-content: center; align-items: center;
+    width: 40px; height: 40px;
+    background-color: #21252c; 
+    border-radius: 8px; margin-right: 15px; flex-shrink: 0;
+}
+
+.detail-card .fa-dumbbell, .detail-card .fa-moon { font-size: 18px; color: var(--primary-green); }
+
+/* Nutrición (fondo verde) */
+.primary-green-bg { background-color: var(--primary-green) !important; color: #1a1f26 !important; }
+.primary-green-bg .detail-icon-box { background-color: #1a1f26; }
+.primary-green-bg .detail-icon-box i { color: var(--primary-green); }
+
+.detail-label { font-weight: bold; flex-grow: 1; font-size: 1.1em; }
+.detail-info { color: var(--label-color); font-size: 0.9em; margin-right: 10px; }
+.primary-green-bg .detail-info { color: #4b5259; }
+
+.arrow-icon { font-size: 24px; color: var(--label-color); }
+.primary-green-bg .arrow-icon { color: #4b5259; }
+
+/* --- Botón Flotante de Consulta IA --- */
+.ia-consult-button {
+    position: fixed; bottom: 30px; right: 30px;
+    width: 250px; padding: 12px 15px;
+    background-color: var(--card-bg-color);
+    border: 2px solid var(--primary-green);
+    border-radius: 30px;
+    color: var(--text-color);
+    font-size: 1em; cursor: pointer;
+    display: flex; justify-content: space-between; align-items: center;
+    box-shadow: 0 5px 20px rgba(0, 255, 140, 0.3);
+    z-index: 1000;
+}
+
+.mic-icon-container {
+    display: flex; justify-content: center; align-items: center;
+    width: 35px; height: 35px;
+    background-color: var(--primary-green); border-radius: 50%;
+}
+.mic-icon { font-size: 20px; color: #1a1f26; }
+
+
+/* --- Pantalla de Entrenamiento (training-container) --- */
+.training-container {
+    width: 100%; max-width: 1000px;
+    padding: 20px; margin: 0 auto;
+    background-color: var(--bg-color); color: var(--text-color);
+}
+
+.training-header { display: flex; align-items: center; margin-bottom: 40px; }
+
+.training-icon-box {
+    display: flex; justify-content: center; align-items: center;
+    width: 55px; height: 55px;
+    background-color: var(--primary-green);
+    border-radius: 12px; margin-right: 15px; flex-shrink: 0;
+}
+.training-icon-box .fa-dumbbell { font-size: 28px; color: var(--card-bg-color); }
+
+.training-main-title { font-size: 2.2em; font-weight: 800; margin: 0; line-height: 1.1; }
+.training-subtitle { font-size: 1em; color: var(--label-color); margin: 0; margin-top: 5px; }
+
+/* Contenido principal (Dos Columnas) */
+.training-content { display: flex; gap: 40px; align-items: flex-start; }
+.routine-section-left { flex: 2; }
+.recommendations-section-right { flex: 1; min-width: 300px; text-align: center; }
+
+/* Rutina de HOY */
+.routine-title { font-size: 1.8em; font-weight: 700; margin-bottom: 25px; }
+.exercise-list-compact { display: flex; flex-direction: column; gap: 15px; }
+
+.exercise-card-compact {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 15px 20px;
+    background-color: var(--card-bg-color);
+    border-radius: 10px; text-decoration: none;
+    color: var(--text-color);
+    transition: background-color 0.2s;
+    border: 1px solid #1f252c;
+}
+.exercise-card-compact:hover { background-color: #2a3038; }
+
+.exercise-name-compact { font-weight: bold; flex-grow: 1; text-align: left; }
+.exercise-details-compact { color: var(--label-color); font-size: 0.9em; margin-right: 15px; white-space: nowrap; }
+
+/* Recomendaciones y Botones */
+.recommendations-title-section { font-size: 1.2em; font-weight: 800; margin-bottom: 20px; text-align: left; }
+
+.recommendations-box {
+    background-color: var(--card-bg-color);
+    border: 1px solid #1f252c;
+    border-radius: 10px; padding: 20px;
+    margin-bottom: 30px; text-align: left;
+}
+
+.recommendations-box ul { list-style: none; padding: 0; margin: 0; font-size: 0.95em; }
+.recommendations-box ul li { color: var(--text-color); margin-bottom: 10px; display: flex; align-items: flex-start; }
+
+.green-bullet-small {
+    display: inline-block; width: 6px; height: 6px;
+    background-color: var(--primary-green);
+    border-radius: 50%; margin-right: 10px; margin-top: 5px; flex-shrink: 0;
+}
+
+.action-button {
+    width: 100%; padding: 15px;
+    border: none; border-radius: 8px;
+    font-weight: bold; font-size: 1em; cursor: pointer;
+    margin-bottom: 15px; transition: opacity 0.2s;
+}
+.warmup-button { background-color: #2a3038; color: var(--text-color); }
+.start-routine-button { background-color: var(--primary-green); color: #1a1f26; text-transform: uppercase; }
+
+.consult-ia-label { font-size: 0.9em; color: var(--label-color); margin-top: 30px; margin-bottom: 10px; text-align: center; }
+.mic-icon-container-footer {
+    display: inline-flex; justify-content: center; align-items: center;
+    width: 45px; height: 45px;
+    background-color: var(--primary-green); border-radius: 50%;
+}
+.mic-icon-container-footer .mic-icon { font-size: 24px; color: #1a1f26; }
+
+
+/* --- Pantalla de Nutrición --- */
+.training-icon-box.primary-green-bg { background-color: var(--primary-green); }
+.training-icon-box .icon-dark { color: var(--card-bg-color); }
+
+.macro-summary-card {
+    background-color: var(--card-bg-color); padding: 20px;
+    border-radius: 10px; margin-bottom: 30px; border: 1px solid #1f252c;
+}
+
+.macro-target { font-size: 1.1em; font-weight: bold; margin-bottom: 10px; color: var(--text-color); }
+.highlight-green { color: var(--primary-green); }
+
+.progress-info {
+    display: flex; justify-content: space-between;
+    font-size: 0.9em; color: var(--label-color); margin-bottom: 8px;
+}
+
+.progress-bar-container { height: 8px; background-color: #2a3038; border-radius: 4px; overflow: hidden; }
+.progress-bar { height: 100%; background-color: var(--primary-green); transition: width 0.5s ease-in-out; }
+
+.section-subtitle { font-size: 1.2em; font-weight: 700; margin-top: 0; margin-bottom: 20px; }
+.macro-item { margin-bottom: 15px; }
+.macro-name { font-weight: bold; }
+.macro-progress { float: right; color: var(--label-color); font-size: 0.9em; }
+.macro-bar { height: 6px; border-radius: 3px; margin-top: 5px; transition: width 0.5s ease-in-out; }
+.protein-bar { background-color: #4b89f5; }
+.carb-bar { background-color: #f7b44e; }
+.fat-bar { background-color: #d15656; }
+
+.meals-list { display: flex; flex-direction: column; gap: 15px; margin-bottom: 30px; }
+.meal-item {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 10px 15px; background-color: #1a1f26;
+    border-radius: 8px; border: 1px solid #1f252c;
+}
+.meal-item.pending { opacity: 0.7; border-color: var(--label-color); }
+.meal-time { font-weight: bold; flex-grow: 1; text-align: left; }
+.meal-calories { color: var(--label-color); font-size: 0.9em; margin-right: 15px; }
+.log-button {
+    padding: 8px 12px; border: none; border-radius: 6px;
+    font-weight: bold; font-size: 0.9em; cursor: pointer;
+    background-color: #3d4554; color: var(--text-color);
+}
+.log-button.primary-green-bg { background-color: var(--primary-green); color: #1a1f26; }
+
+
+/* --- Pantalla de Sueño --- */
+.training-icon-box.sleep-bg { background-color: #5d5d67; }
+.sleep-bg .icon-dark { color: var(--text-color); }
+
+.sleep-summary-card {
+    background-color: var(--card-bg-color); padding: 25px 20px;
+    border-radius: 10px; margin-bottom: 30px;
+    border: 1px solid #1f252c; text-align: center;
+}
+.summary-target {
+    font-size: 1em; font-weight: bold; color: var(--label-color);
+    margin-bottom: 20px; border-bottom: 1px dashed #2a3038; padding-bottom: 10px;
+}
+.sleep-time-display { display: flex; flex-direction: column; align-items: center; }
+.sleep-label { font-size: 1.1em; color: var(--label-color); margin-bottom: 5px; }
+.sleep-value { font-size: 3.5em; font-weight: 800; color: var(--primary-green); line-height: 1; }
+.sleep-value .unit { font-size: 0.4em; font-weight: normal; color: var(--label-color); margin-left: 5px; }
+
+.quality-list { margin-top: 20px; }
+.quality-item { margin-bottom: 15px; }
+.quality-name { font-weight: bold; }
+.quality-progress { float: right; color: var(--label-color); font-size: 0.9em; }
+.quality-bar { height: 6px; border-radius: 3px; margin-top: 5px; background-color: #2a3038; transition: width 0.5s ease-in-out; }
+.deep-bar { background-color: #4b89f5; }
+.rem-bar { background-color: #9358f2; }
+.rhr-bar { background-color: #ff57a0; }
+
+
+/* =========================================
+   --- RESPONSIVE (MEDIA QUERIES) ---
+   ========================================= */
+
+/* Tablets (max 900px) */
+@media (max-width: 900px) {
+    .training-content { gap: 20px; }
+    .recommendations-section-right { min-width: 250px; }
+}
+
+/* Móviles (max 768px) */
+@media (max-width: 768px) {
+    
+    /* 1. Ajuste General de Contenedores */
+    .plan-container, .training-container {
+        padding: 15px;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    /* 2. Ajuste de Títulos para que no ocupen tanto */
+    .plan-main-title, .training-main-title { font-size: 1.8em; }
+    .plan-subtitle, .training-subtitle { font-size: 0.9em; }
+    .routine-title { font-size: 1.5em; }
+    .sleep-value { font-size: 2.8em; }
+
+    /* 3. Colapso de Columnas (Flex Vertical) */
+    .training-content {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    /* 4. Ancho completo para secciones internas */
+    .routine-section-left, 
+    .recommendations-section-right {
+        width: 100%;
+        flex: none; /* Quitar flex sizing */
+    }
+
+    /* 5. Ajustes en Tarjetas de Ejercicios */
+    .exercise-card-compact {
+        padding: 15px 10px; /* Menos padding lateral */
+    }
+    .exercise-details-compact {
+        font-size: 0.8em; /* Texto un poco más pequeño */
+    }
+
+    /* 6. Botón Flotante IA (Centrado abajo en móvil) */
+    .ia-consult-button {
+        width: 90%;
+        left: 50%;
+        transform: translateX(-50%); /* Centrado horizontal */
+        bottom: 20px;
+    }
+
+    /* 7. Ajustes Nutrición/Comidas */
+    .meal-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+    .meal-calories { margin-right: 0; margin-bottom: 5px; }
+    .log-button { width: 100%; text-align: center; } /* Botón ancho completo */
+}

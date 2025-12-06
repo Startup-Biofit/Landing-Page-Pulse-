@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PULSE+</title>
+
+  <!-- Tipografía -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- =========================
+    HEADER - MENÚ NAVEGACIÓN
+========================= -->
+<header>
+  <div class="logo">
+    <img src="assets/images/mini_logo.png" alt="Pulse+ Logo" class="logo-img">
+    PULSE+
+  </div>
+
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#caracteristicas">Características</a>
+    <a href="#beneficios">Beneficios</a>
+    <a href="#testimonios">Testimonios</a>
+    <a href="#precios">Precios</a>
+  </nav>
+
+  <div class="actions">
+    <a href="iniciar-sesion.html"><button class="btn-header">Iniciar Sesión</button></a>
+    <a href="registro.html"><button class="btn-header">Empezar Gratis</button></a>
+  </div>
+</header>
+
+<!-- =========================
+      HERO / INICIO
+========================= -->
+
+<!-- SECCIÓN INICIO -->
+<link rel="stylesheet" href="assets/styles/seccion-inicio/styles.css">
+<script src="assets/scripts/seccion-inicio/script.js"></script>
+
+<section id="inicio" class="hero">
+  <p class="badge">📍 Disponible en Perú</p>
+  <h1>
+    Pulse+, <span>el impulso</span><br />
+    hacia tu mejor versión <span class="icono-brillo">✨</span>
+  </h1>
+  <p class="lead">
+    IA y realidad virtual para <strong>usuarios</strong> que buscan transformación personal 
+    y <strong>entrenadores</strong> que gestionan clientes profesionalmente.
+  </p>
+
+  <div class="metrics">
+    <div class="metric"><strong>15K+</strong><span>Usuarios activos</span></div>
+    <div class="metric"><strong>500+</strong><span>Entrenadores</span></div>
+    <div class="metric"><strong>98%</strong><span>Adherencia VR</span></div>
+  </div>
+
+  <div class="store-buttons">
+    <img alt="Google Play" src="https://play.google.com/intl/es_es/badges/static/images/badges/es_badge_web_generic.png" />
+    <img alt="App Store" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" />
+  </div>
+</section>
+
+<!-- SECCIÓN CARACTERÍSTICAS -->
+
+<link rel="stylesheet" href="assets/styles/seccion-caracteristicas/styles.css">
+<script type="module" src="assets/scripts/seccion-caracteristicas/main.js"></script>
+
+
+<section id="caracteristicas" class="experience-section">
+  <h2>Elige tu experiencia <span>Pulse+</span></h2>
+  <p class="subtitle">Dos interfaces especializadas, ambas potenciadas con IA y realidad virtual</p>
+
+  <div class="experience-cards">
+    <div class="experience-card" id="cardUsuario">
+      <div class="user">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M20 21v-2a4 4 0 0 0-3-3.87"></path>
+          <path d="M4 21v-2a4 4 0 0 1 3-3.87"></path>
+          <circle cx="12" cy="7" r="4"></circle>
+        </svg>
+      </div>
+
+      <h3>Soy Usuario</h3>
+      <p class="desc">Joven adulto que busca transformación física y mental</p>
+      
+      <ul>
+        <li>Registro personalizado Usuario Fit</li>
+        <li>Entrenamientos VR y búsqueda inteligente</li>
+        <li>Dashboard con IA y seguimiento total</li>
+      </ul>
+
+      <button class="btn" onclick="elegir('usuario')">Comenzar mi Transformación →</button>
+      <p class="price">Gratis para empezar · Premium desde S/29.90/mes</p>
+    </div>
+
+    <div class="experience-card" id="cardEntrenador">
+      <div class="user">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M20 21v-2a4 4 0 0 0-3-3.87"></path>
+          <path d="M4 21v-2a4 4 0 0 1 3-3.87"></path>
+          <circle cx="12" cy="7" r="4"></circle>
+        </svg>
+      </div>
+
+      <h3>Soy Entrenador</h3>
+      <p class="desc">Coach que gestiona clientes y optimiza rutinas</p>
+      
+      <ul>
+        <li>Panel multicliente y marketplace integrado</li>
+        <li>Reportes PDF/Excel y métricas avanzadas</li>
+        <li>Herramientas VR para demostraciones</li>
+      </ul>
+
+      <button class="btn" onclick="elegir('entrenador')">Gestionar mis Clientes →</button>
+      <p class="price">Starter S/49.90/mes · Pro S/99.90/mes</p>
+    </div>
+  </div>
+</section>
+
+<!-- =========================
+    CARDS DE JÓVENES ADULTOS
+========================= -->
+<section id="jovenes" class="joven-section">
+  <h2>Dos interfaces, experiencias perfectas</h2>
+  <p class="subtitle">Tecnología avanzada adaptada a las necesidades específicas de cada usuario</p>
+
+  <div class="badge-joven"><span class="dot"></span> Para Usuarios Jóvenes Adultos</div>
+  <p class="description">Transformación personal con tecnología de vanguardia</p>
+
+  <div class="joven-cards">
+    <div class="joven-card">
+      <img src="assets/images/ia-personal.jpg" alt="IA Personal">
+      <div class="joven-card-content">
+        <h3>🤖 IA Personal</h3>
+        <p>Rutinas que evolucionan contigo. La IA evalúa tu progreso y adapta entrenamientos para maximizar tu transformación física y mental.</p>
+      </div>
+    </div>
+
+    <div class="joven-card">
+      <img src="assets/images/experiencia-vr.jpg" alt="Experiencia VR">
+      <div class="joven-card-content">
+        <h3>🕶️ Experiencia VR</h3>
+        <p>Entrenamientos inmersivos en casa, gym o al aire libre. Mejora tu adherencia mientras te diviertes alcanzando tus objetivos.</p>
+      </div>
+    </div>
+
+    <div class="joven-card">
+      <img src="assets/images/control-nutricional.jpg" alt="Control Nutricional">
+      <div class="joven-card-content">
+        <h3>🥗 Control Nutricional</h3>
+        <p>Gestión inteligente de calorías y macronutrientes. Planes personalizados que se adaptan a tus necesidades.</p>
+      </div>
+    </div>
+
+    <div class="joven-card">
+      <img src="assets/images/flexibilidad.jpg" alt="Flexibilidad Total">
+      <div class="joven-card-content">
+        <h3>📱 Flexibilidad Total</h3>
+        <p>Entrena donde quieras: en casa, gym o al aire libre. Todo sincronizado entre dispositivos para no perder tu progreso.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================
+    CARDS DE ENTRENADORES / COACHES
+========================= -->
+<section id="entrenadores" class="coach-section">
+  <div class="coach-header">
+    <div class="badge-coach"><span class="dot"></span> Para Entrenadores y Coaches</div>
+    <p class="subtitle">Herramientas profesionales para gestión eficiente</p>
+  </div>
+
+  <div class="coach-cards">
+    <div class="coach-card">
+      <img src="assets/images/gestion-clientes.jpg" alt="Gestión de Clientes">
+      <div class="coach-card-content">
+        <h3>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" stroke="#00b359" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle; margin-right: 0.3rem;">
+            <path d="M17 21v-2a4 4 0 0 0-3-3.87"></path>
+            <path d="M7 21v-2a4 4 0 0 1 3-3.87"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+          </svg>
+          Gestión de Clientes
+        </h3>
+        <p>Dashboard completo para administrar múltiples clientes, hacer seguimiento individual y personalizar rutinas profesionalmente.</p>
+      </div>
+    </div>
+
+    <div class="coach-card">
+      <img src="assets/images/analisis-avanzado.jpg" alt="Análisis Avanzado">
+      <div class="coach-card-content">
+        <h3>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" stroke="#00b359" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle; margin-right: 0.3rem;">
+            <line x1="18" y1="20" x2="18" y2="10"></line>
+            <line x1="12" y1="20" x2="12" y2="4"></line>
+            <line x1="6" y1="20" x2="6" y2="14"></line>
+          </svg>
+          Análisis Avanzado
+        </h3>
+        <p>Reportes detallados del progreso de tus clientes, métricas de adherencia y análisis de resultados para optimizar tu trabajo.</p>
+      </div>
+    </div>
+
+    <div class="coach-card">
+      <img src="assets/images/organizacion-pro.jpg" alt="Organización Pro">
+      <div class="coach-card-content">
+        <h3>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" stroke="#00b359" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle; margin-right: 0.3rem;">
+            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+            <line x1="16" y1="2" x2="16" y2="6"></line>
+            <line x1="8" y1="2" x2="8" y2="6"></line>
+            <line x1="3" y1="10" x2="21" y2="10"></line>
+          </svg>
+          Organización Pro
+        </h3>
+        <p>Calendario inteligente, programación automática de rutinas y herramientas profesionales para facilitar tu trabajo diario.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECCIÓN BENEFICIOS -->
+
+<link rel="stylesheet" href="assets/styles/seccion-beneficios/styles.css">
+
+<section id="beneficios" class="beneficios">
+  <h2>Beneficios compartidos</h2>
+
+  <div class="beneficios-grid">
+
+    <div class="beneficio-item">
+      <h4>
+        <!-- Icono de Robot para IA -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#00B050" stroke-width="2" style="margin-right:8px; vertical-align:middle;">
+          <path d="M12 2a5 5 0 0 1 5 5v1a5 5 0 0 1-10 0V7a5 5 0 0 1 5-5z"></path>
+          <path d="M6 14v7h12v-7"></path>
+        </svg>
+        IA Avanzada
+      </h4>
+      <p>Rutinas personalizadas con IA en tiempo real.</p>
+    </div>
+
+    <div class="beneficio-item">
+      <h4>
+        <!-- Icono de Estrella para VIP -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#00B050" stroke-width="2" style="margin-right:8px; vertical-align:middle;">
+          <path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7z"></path>
+        </svg>
+        VIP Compartido
+      </h4>
+      <p>Planes únicos que podrás compartir con quien quieras.</p>
+    </div>
+
+    <div class="beneficio-item">
+      <h4>
+        <!-- Icono de Lista para Control Calórico -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#00B050" stroke-width="2" style="margin-right:8px; vertical-align:middle;">
+          <path d="M4 4h16v2H4z"></path>
+          <path d="M4 8h16v2H4z"></path>
+          <path d="M4 12h16v2H4z"></path>
+        </svg>
+        Control Calórico
+      </h4>
+      <p>Mide tus calorías en segundos con exactitud.</p>
+    </div>
+
+    <div class="beneficio-item">
+      <h4>
+        <!-- Icono de Sincronización -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#00B050" stroke-width="2" style="margin-right:8px; vertical-align:middle;">
+          <path d="M12 2l6 6-6 6-6-6z"></path>
+          <path d="M12 14v8"></path>
+        </svg>
+        Sincronización
+      </h4>
+      <p>Todo conectado entre móvil, web y smartwatch.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ENTRENA DONDE TE SIENTAS MEJOR-->
+<section class="entrena">
+  <h2>Entrena donde te sientas mejor</h2>
+  <p class="subtexto">Pulse se adapta a tu estilo de vida. Desde tu hogar hasta el gym más equipado, tu entrenamiento personalizado te sigue a donde vayas.</p>
+
+  <div class="cards-entrena">
+
+    <div class="card">
+      <img src="assets/images/en-gym.png" alt="Gym">
+      <div class="contenido">
+        <h3><i data-lucide="dumbbell"></i> En el Gym</h3>
+        <p>Planes optimizados para máquinas de gimnasio y pesas libres, con instrucciones guiadas.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="assets/images/en-casa.png" alt="Casa">
+      <div class="contenido">
+        <h3><i data-lucide="home"></i> En Casa</h3>
+        <p>Entrena sin equipos o con lo que tengas disponible. Rutinas adaptadas a tu espacio.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="assets/images/aire-libre.png" alt="Aire libre">
+      <div class="contenido">
+        <h3><i data-lucide="tree-pine"></i> Al Aire Libre</h3>
+        <p>Cardio, running, caminatas y entrenamientos funcionales donde quieras.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTROL NUTRICIONAL-->
+<section class="nutricion">
+  <div class="nutricion-cuadro">
+    <div class="nutricion-contenido">
+      <div class="nutricion-textos">
+        <h2>Control nutricional donde vayas</h2>
+        <p>Registra calorías, macros, y planes alimentarios completos. Gestión precisa para tus objetivos.</p>
+
+        <div class="nutri-grid">
+          <div class="nutri-item">
+            <h4>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#00B050" stroke-width="2">
+                <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2z"></path>
+                <path d="M12 6v6l4 2"></path>
+              </svg>
+              Calorías
+            </h4>
+            <p>Control exacto diario.</p>
+          </div>
+
+          <div class="nutri-item">
+            <h4>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#00B050" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M8 12h8"></path>
+                <path d="M12 8v8"></path>
+              </svg>
+              Proteínas
+            </h4>
+            <p>Planifica tus porciones.</p>
+          </div>
+
+          <div class="nutri-item">
+            <h4>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#00B050" stroke-width="2">
+                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                <path d="M3 9h18"></path>
+                <path d="M9 21V9"></path>
+              </svg>
+              Carbohidratos
+            </h4>
+            <p>Distribución ideal por comida.</p>
+          </div>
+
+          <div class="nutri-item">
+            <h4>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#00B050" stroke-width="2">
+                <path d="M12 2a10 10 0 0 1 10 10c0 5-10 10-10 10S2 17 2 12A10 10 0 0 1 12 2z"></path>
+              </svg>
+              Grasas
+            </h4>
+            <p>Balance sin excesos.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="nutricion-img">
+        <img src="assets/images/control-nutricional.png" alt="Proteína">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REVOLUCIÓN FITNESS-->
+<section class="revolucion">
+  <h2>Revolucionando el fitness en <span class="verde">Lima</span></h2>
+  <p class="subtexto">Sistema web y móvil que resuelve la necesidad de ejercicio efectivo mediante tecnología avanzada.</p>
+
+  <div class="revol-grid">
+
+    <div class="revol-card">
+      <i data-lucide="brain-circuit"></i>
+      <h3>100%</h3>
+      <p>La IA te conoce y adapta tus entrenamientos de forma automática.</p>
+    </div>
+
+    <div class="revol-card">
+      <i data-lucide="smile"></i>
+      <h3>98%</h3>
+      <p>Experiencias satisfactorias entre usuarios activos.</p>
+    </div>
+
+    <div class="revol-card">
+      <i data-lucide="heart-pulse"></i>
+      <h3>95%</h3>
+      <p>Mejoran su salud física en menos de 8 semanas.</p>
+    </div>
+
+    <div class="revol-card">
+      <i data-lucide="users"></i>
+      <h3>Para Todos</h3>
+      <p>Planes diseñados para cualquier edad o condición física.</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- SECCIÓN TESTIMONIOS -->
+
+<link rel="stylesheet" href="assets/styles/feature-testimonios/styles.css">
+<script type="module" src="assets/scripts/feature-testimonios/main.js"></script>
+
+
+<section id="testimonios" class="testimonials-section">
+  <h2>✨ Historias de éxito en Lima</h2>
+  <p class="subtitle">Usuarios que transformaron su físico y entrenadores que optimizaron su práctica profesional</p>
+
+  <!-- Usuarios -->
+  <div class="cards-container">
+    <div class="testimonial-card">
+      <img src="https://i.pravatar.cc/150?img=47" class="avatar">
+      <h3>Sofía Mendoza</h3>
+      <p class="role">Estudiante de Marketing · 24 años</p>
+      <p class="location"><i data-lucide="map-pin"></i> San Isidro</p>
+      <div class="stars">★★★★★</div>
+      <img src="assets/images/ComillasVerdes.png" alt="comillas" class="comillas-icon">
+      <p class="comment">La IA de Pulse+ entendió perfectamente mis objetivos. Los entrenamientos VR son increíbles, no se sienten como ejercicio tradicional. He mejorado mi físico y mi confianza mental.</p>
+    </div>
+
+    <div class="testimonial-card">
+      <img src="https://i.pravatar.cc/150?img=32" class="avatar">
+      <h3>Diego Ramírez</h3>
+      <p class="role">Desarrollador · 28 años</p>
+      <p class="location"><i data-lucide="map-pin"></i> Miraflores</p>
+      <div class="stars">★★★★★</div>
+      <img src="assets/images/ComillasVerdes.png" alt="comillas" class="comillas-icon">
+      <p class="comment">Como programador sedentario, necesitaba algo que me motivara. La realidad virtual cambió todo: ahora hago ejercicio 5 veces por semana y me siento increíble.</p>
+    </div>
+  </div>
+
+  <!-- Entrenadores -->
+  <div class="cards-container">
+    <div class="testimonial-card">
+      <img src="https://i.pravatar.cc/150?img=12" class="avatar">
+      <h3>Carlos Vega</h3>
+      <p class="role">Entrenador Personal Certificado</p>
+      <p class="location"><i data-lucide="map-pin"></i> La Molina</p>
+      <div class="stars">★★★★★</div>
+      <img src="assets/images/ComillasVerdes.png" alt="comillas" class="comillas-icon">
+      <p class="comment">Pulse+ revolucionó mi práctica. Gestiono 45 clientes eficientemente, la IA me ayuda a personalizar rutinas y los reportes de progreso impresionan a mis clientes.</p>
+    </div>
+
+    <div class="testimonial-card">
+      <img src="https://i.pravatar.cc/150?img=57" class="avatar">
+      <h3>Ana Gutiérrez</h3>
+      <p class="role">Directora PowerGym Lima</p>
+      <p class="location"><i data-lucide="map-pin"></i> Surco</p>
+      <div class="stars">★★★★★</div>
+      <img src="assets/images/ComillasVerdes.png" alt="comillas" class="comillas-icon">
+      <p class="comment">Implementamos Pulse+ en nuestro gimnasio. Los miembros aman la VR, los entrenadores son más eficientes y hemos aumentado la retención 40%.</p>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- SECCIÓN PRECIOS -->
+<link rel="stylesheet" href="assets/styles/seccion-precios/styles.css">
+<script src="assets/scripts/seccion-precios/main.js"></script>
+
+<section id="precios">
+  <h2>Planes para cada tipo de <span class="resaltar-verde">usuario</span></h2>
+
+  <div class="contenedor-planes usuarios">
+    <div class="plan-card">
+      <h3>Usuario Basic</h3>
+      <p class="precio">S/GRATIS<span>/siempre</span></p>
+      <button class="btn">Empezar Gratis</button>
+      <ul>
+        <li>Entrenamientos básicos</li>
+        <li>Seguimiento de actividad</li>
+        <li>Calendario básico</li>
+        <li>Acceso a la comunidad</li>
+        <li>Soporte por email</li>
+      </ul>
+    </div>
+
+    <div class="plan-card destacado">
+      <div class="badge">★ Más Popular</div>
+      <h3>Usuario Premium</h3>
+      <p class="precio">S/29.90<span>/mes</span></p>
+      <button class="btn verde">Prueba 7 días gratis</button>
+      <ul>
+        <li>Rutinas personalizadas con IA</li>
+        <li>Entrenamientos en realidad virtual</li>
+        <li>Contenido exclusivo en video</li>
+        <li>Adaptación automática de rutinas</li>
+        <li>Sincronización con wearables</li>
+        <li>Seguimiento nutricional avanzado</li>
+        <li>Soporte prioritario 24/7</li>
+        <li>Logros y desafíos exclusivos</li>
+      </ul>
+    </div>
+  </div>
+
+  <h2>Para Entrenadores & Coaches</h2>
+  <div class="contenedor-planes">
+    <div class="plan-card">
+      <h3>Coach Starter</h3>
+      <p class="precio">S/49.90<span>/mes</span></p>
+      <button class="btn">Empezar como Coach</button>
+      <ul>
+        <li>Hasta 20 clientes</li>
+        <li>Dashboard de gestión básico</li>
+        <li>Calendario de entrenamientos</li>
+        <li>Reportes de progreso</li>
+        <li>Chat con clientes</li>
+        <li>App móvil completa</li>
+      </ul>
+    </div>
+
+    <div class="plan-card destacado">
+      <div class="badge">★ Más Popular</div>
+      <h3>Coach Pro</h3>
+      <p class="precio">S/99.90<span>/mes</span></p>
+      <button class="btn verde">Prueba 14 días gratis</button>
+      <ul>
+        <li>Clientes ilimitados</li>
+        <li>IA para personalización automática</li>
+        <li>Demostraciones VR para clientes</li>
+        <li>Análisis avanzado de datos</li>
+        <li>Programación automática</li>
+        <li>Sistema de facturación integrado</li>
+        <li>Métricas de adherencia</li>
+        <li>Biblioteca de rutinas premium</li>
+        <li>Soporte técnico dedicado</li>
+      </ul>
+    </div>
+
+    <div class="plan-card">
+      <h3>Gym Enterprise</h3>
+      <p class="precio">S/299<span>/mes</span></p>
+      <button class="btn">Contactar Ventas</button>
+      <ul>
+        <li>Múltiples entrenadores</li>
+        <li>Gestión de membresías</li>
+        <li>Dashboard administrativo</li>
+        <li>Análisis de negocio</li>
+        <li>Implementación en Lima</li>
+        <li>Capacitación del equipo</li>
+        <li>Soporte técnico on-site</li>
+        <li>Integración con sistemas existentes</li>
+      </ul>
+    </div>
+  </div>
+
+  <section class="cta-lima">
+    <h2>¿Listo para la revolución del fitness en <span>Lima</span>?</h2>
+    <p>Únete a la innovación que combina IA y realidad virtual.</p>
+    <a href="registro.html" class="btn grande verde">Comenzar Gratis</a>
+  </section>
+</section>
+
+<!-- =========================
+    FOOTER DE LA PÁGINA
+========================= -->
+<footer class="footer">
+  <div class="footer-contenedor">
+    <div class="footer-col">
+      <img src="assets/images/pulse_logo.png" alt="Pulse Logo" style="width:140px; margin-bottom:15px;">
+      <p>Tu completo integral para un estilo de vida saludable. Desarrollado por BioFit, para hacer el bienestar accesible para todos.</p>
+      <p>contacto@biofit.pe</p>
+      <p>Lima, Perú</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Landing Page</h4>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#caracteristicas">Características</a></li>
+        <li><a href="#beneficios">Beneficios</a></li>
+        <li><a href="#precios">Precios</a></li>
+        <li><a href="#testimonios">Testimonios</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>BioFit</h4>
+      <ul>
+        <li>Acerca de Biofit</li>
+        <li>Contacto</li>
+      </ul>
+    </div>
+  </div>
+  <p class="copyright">© 2025 Biofit. Todos los derechos reservados.</p>
+</footer>
+
+<!-- =========================
+  SCRIPT BOTONES EXPERIENCIA
+========================= -->
+<script>
+function elegir(tipo) {
+  if (tipo === 'usuario') {
+    alert("Has elegido: Usuario 💪 ¡Prepárate para tu transformación!");
+  } else {
+    alert("Has elegido: Entrenador 🧠 ¡Optimiza tu práctica con IA!");
+  }
+}
+</script>
+
+</body>
+</html>

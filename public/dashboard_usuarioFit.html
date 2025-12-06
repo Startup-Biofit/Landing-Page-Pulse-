@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Dashboard - Pulse+</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles/usuarioFit_dashboard/style.css">
+</head>
+<body>
+
+    <div class="app-container">
+        
+        <header>
+            <div class="header-left">
+                <div class="user-info">
+                    <div class="avatar"><i class="fa-regular fa-user"></i></div>
+                    <div class="greeting">
+                        <h1>Hola,</h1>
+                        <h2>Carlos</h2>
+                    </div>
+                </div>
+
+                <div class="action-buttons">
+                    <a href="iniciar-sesion.html" class="btn-pill">Cerrar sesión</a>
+                    <a href="#" class="icon-btn"><i class="fa-solid fa-gear"></i></a>
+                    <a href="#" class="icon-btn"><i class="fa-regular fa-calendar"></i></a>
+                </div>
+            </div>
+            
+            <a href="#" class="notification-btn">
+                <i class="fa-regular fa-bell"></i>
+            </a>
+        </header>
+
+        <div class="left-column">
+            
+            <div class="cards-row">
+                <a href="plan-integral.html" class="card white-card">
+                    <h3>Plan Integral</h3>
+                    <span>Ver rutina completa</span>
+                    <div class="card-icon"><i class="fa-solid fa-dumbbell"></i></div>
+                </a>
+
+                <a href="historial.html" class="card white-card">
+                    <h3>Avances</h3>
+                    <span>Estadísticas mensuales</span>
+                    <div class="card-icon"><i class="fa-solid fa-chart-line"></i></div>
+                </a>
+            </div>
+
+            <div class="activity-section">
+                <h3 class="section-title">Tu actividad de hoy</h3>
+                
+                <div class="activity-list">
+                    
+                    <a href="#" class="activity-item">
+                        <div class="activity-header">
+                            <div class="a-icon"><i class="fa-solid fa-dumbbell"></i></div>
+                            <div class="a-info">
+                                <span>Entrenamiento</span>
+                                <span class="percentage">65%</span>
+                            </div>
+                        </div>
+                        <div class="progress-bg">
+                            <div class="progress-fill" style="width: 65%;"></div>
+                        </div>
+                    </a>
+                    
+                    <a href="#" class="activity-item">
+                        <div class="activity-header">
+                            <div class="a-icon"><i class="fa-solid fa-apple-whole"></i></div>
+                            <div class="a-info">
+                                <span>Nutrición</span>
+                                <span class="percentage">80%</span>
+                            </div>
+                        </div>
+                        <div class="progress-bg">
+                            <div class="progress-fill" style="width: 80%;"></div>
+                        </div>
+                    </a>
+
+                    <a href="#" class="activity-item">
+                        <div class="activity-header">
+                            <div class="a-icon"><i class="fa-regular fa-moon"></i></div>
+                            <div class="a-info">
+                                <span>Sueño</span>
+                                <span class="percentage">90%</span>
+                            </div>
+                        </div>
+                        <div class="progress-bg">
+                            <div class="progress-fill" style="width: 90%;"></div>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="right-column">
+            <div class="next-session-card">
+                <div class="ns-top">
+                    <div class="ns-header">
+                        <span>Próxima sesión</span>
+                        <span class="ns-badge">Hoy, 18:00</span>
+                    </div>
+                    <div class="ns-subtitle">Entrenamiento de fuerza - Piernas</div>
+                </div>
+                
+                <div class="dark-placeholder">
+                    <i class="fa-solid fa-person-running"></i>
+                </div>
+
+                <a href="#" class="btn-optimize">
+                    <i class="fa-solid fa-wand-magic-sparkles"></i> Optimizar sesión con IA
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <nav class="bottom-nav">
+        <a href="index.html" class="nav-item active"><i class="fa-solid fa-house"></i></a>
+        <a href="#" class="nav-item"><i class="fa-solid fa-users"></i></a>
+        <a href="#" class="nav-item"><i class="fa-solid fa-bullseye"></i></a>
+        <a href="#" class="nav-item"><i class="fa-regular fa-comment"></i></a>
+        <a href="#" class="nav-item"><i class="fa-regular fa-user"></i></a>
+    </nav>
+
+</body>
+</html>
+
+
+
+
+<!--<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/styles/usuarioFit_dashboard/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <div class="app-container">
+        
+        <header>
+            <div class="header-left">
+                <div class="user-info">
+                    <div class="avatar"><i class="fa-regular fa-user"></i></div>
+                    <div class="greeting">
+                        <h1>Hola,</h1>
+                        <h2>Carlos</h2>
+                    </div>
+                </div>
+                <div class="action-buttons">
+                    <button class="btn-pill">Cerrar sesión</button>
+                    <button class="icon-btn"><i class="fa-solid fa-gear"></i></button>
+                    <button class="icon-btn"><i class="fa-regular fa-calendar"></i></button>
+                </div>
+            </div>
+            
+            <button class="notification-btn">
+                <i class="fa-regular fa-bell"></i>
+            </button>
+        </header>
+
+        <div class="left-column">
+            
+            <div class="main-cards">
+                
+                <div class="card">
+                    <h3>Plan Integral</h3>
+                    <span>Ver rutina completa</span>
+                    <div class="card-icon"><i class="fa-solid fa-dumbbell"></i></div>
+                </div>
+
+                <a href="historial.html" class="card">
+                    <h3>Avances</h3>
+                    <span>Estadísticas mensuales</span>
+                    <div class="card-icon"><i class="fa-solid fa-chart-line"></i></div>
+                </a>
+                
+            </div> 
+            <div>
+                <h3 class="section-title">Tu actividad de hoy</h3>
+                
+                    <a href="plan-integral.html" class="activity-list">
+                        <div class="activity-item">
+                        <div class="activity-header">
+                            <div class="activity-icon"><i class="fa-solid fa-dumbbell"></i></div>
+                            <div class="activity-info">
+                                <span>Entrenamiento</span>
+                                <span class="percentage">65%</span>
+                            </div>
+                        </div>
+                        <div class="progress-bar-bg">
+                            <div class="progress-bar-fill" style="width: 65%;"></div>
+                        </div>
+                        </div>
+                    </a>    
+
+                    <a href="nutricion.html" class="activity-item">
+                        <div class="activity-header">
+                        <div class="activity-icon"><i class="fa-solid fa-apple-whole"></i></div>
+                        <div class="activity-info">
+                            <span class="n">Nutrición</span>
+                            <span class="percentage">80%</span>
+                        </div>
+                        </div>
+                        <div class="progress-bar-bg">
+                            <div class="progress-bar-fill" style="width: 80%;"></div>
+                        </div>
+                    </a>
+
+                    <div class="activity-item">
+                        <div class="activity-header">
+                            <div class="activity-icon"><i class="fa-regular fa-moon"></i></div>
+                            <div class="activity-info">
+                                <span>Sueño</span>
+                                <span class="percentage">90%</span>
+                            </div>
+                        </div>
+                        <div class="progress-bar-bg">
+                            <div class="progress-bar-fill" style="width: 90%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="right-column">
+            <div class="next-session-card">
+                <div>
+                    <div class="ns-header">
+                        <span>Próxima sesión</span>
+                        <span class="ns-time">Hoy, 18:00</span>
+                    </div>
+                    <div class="ns-subtitle">Entrenamiento de fuerza - Piernas</div>
+                    
+                </div>
+                
+                <div class="ai-optimize">
+                    <i class="fa-solid fa-wand-magic-sparkles"></i> Optimizar sesión con IA
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <nav class="bottom-nav">
+        <a href="#" class="nav-item active">
+            <i class="fa-solid fa-house"></i>
+        </a>
+        <a href="#" class="nav-item">
+            <i class="fa-solid fa-users"></i>
+        </a>
+        <a href="#" class="nav-item">
+            <i class="fa-solid fa-bullseye"></i>
+        </a>
+        <a href="#" class="nav-item">
+            <i class="fa-regular fa-comment"></i>
+        </a>
+        <a href="#" class="nav-item">
+            <i class="fa-regular fa-user"></i>
+        </a>
+    </nav>
+
+</body>
+</html>

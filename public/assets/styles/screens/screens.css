@@ -1,0 +1,384 @@
+/* ==================================== */
+/* BASE CSS - Estilos para todas las pantallas */
+/* ==================================== */
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    display: none; /* JavaScript controla la visibilidad */
+    padding: 20px;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.subtitle {
+    color: #999;
+    font-size: 0.9em;
+    margin-top: -20px;
+    margin-bottom: 30px;
+}
+
+/* Botón de Continuar */
+.btn-continue {
+    background-color: #00ff80; /* Verde brillante */
+    color: #000;
+    border: none;
+    padding: 12px 50px;
+    border-radius: 8px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 40px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    box-shadow: 0 0 15px #00ff8066, 0 0 5px #00ff80 inset;
+}
+
+.btn-continue:hover {
+    background-color: #00e673;
+    box-shadow: 0 0 20px #00ff80, 0 0 8px #00ff80 inset;
+}
+
+/* ==================================== */
+/* CSS 1: Sexo */
+/* ==================================== */
+.options-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.option-card {
+    flex: 1;
+    background: #1a1a1a;
+    border-radius: 10px;
+    padding: 30px 10px;
+    cursor: pointer;
+    border: 2px solid #333;
+    transition: border-color 0.3s, background 0.3s, box-shadow 0.3s;
+}
+
+.option-card h3 {
+    margin: 10px 0 5px;
+    font-weight: normal;
+}
+
+.option-card p {
+    font-size: 0.8em;
+    color: #999;
+    margin: 0;
+}
+
+.icon-avatar {
+    font-size: 3em;
+    display: block;
+    margin-bottom: 10px;
+    color: #888;
+}
+
+/* Estilo para la tarjeta seleccionada */
+.active-green {
+    border-color: #00ff80;
+    box-shadow: 0 0 15px #00ff8088;
+    background: #0d1a13;
+}
+
+.active-green .icon-avatar {
+    color: #00ff80;
+}
+
+/* ==================================== */
+/* CSS 1: Iconos de Sexo Modernos/Abstractos */
+/* ==================================== */
+
+/* Opcional: Esto estiliza el emoji de figura humana como un icono moderno */
+.icon-avatar {
+    /* Mantenemos el tamaño y color base */
+    font-size: 3.5em; /* Ligeramente más grande para que se note */
+    display: block;
+    margin-bottom: 10px;
+    color: #555; /* Color más oscuro que el texto base para contraste */
+    line-height: 1;
+}
+
+/* Masculino: Estilo sutil de cuerpo atlético (usando una sombra) */
+.option-card.male .icon-avatar {
+    /* Simula una silueta más ancha en hombros */
+    text-shadow: 0 -2px 0 #555, 0 2px 0 #555;
+}
+
+/* Femenino: Estilo sutil de cuerpo más curvado (usando una sombra) */
+.option-card.female .icon-avatar {
+    /* Simula una silueta más estrecha en la cintura (aunque es sutil) */
+    text-shadow: 0 4px 0 #555, 0 -4px 0 #555;
+}
+
+
+/* Estilo para la tarjeta seleccionada (Aplicado a ambos) */
+.active-green .icon-avatar {
+    color: #00ff80; /* Color principal al seleccionar */
+    /* Reseteamos la sombra y usamos una sombra de color neón */
+    text-shadow: 
+        0 0 1px #00ff80,
+        0 0 5px #00ff8066,
+        0 0 10px #00ff8044;
+}
+
+/* ==================================== */
+/* CSS 2 & 3: Estatura y Peso (Slider) */
+/* ==================================== */
+.unit-toggle {
+    margin-bottom: 20px;
+}
+
+.unit-toggle span {
+    padding: 5px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.unit-active {
+    background-color: #00ff80;
+    color: #000;
+}
+
+.unit-inactive {
+    background-color: #333;
+    color: #888;
+}
+
+.slider-box {
+    background: #1a1a1a;
+    border-radius: 10px;
+    padding: 40px 20px;
+    box-shadow: 0 0 10px #00ff8044;
+}
+
+.value-display {
+    font-size: 5.5em;
+    font-weight: bold;
+    color: #fff;
+    line-height: 1;
+    margin-bottom: 5px;
+}
+
+.unit-text {
+    font-size: 1em;
+    color: #999;
+    margin-bottom: 25px;
+}
+
+/* Slider */
+.range-slider {
+    padding: 10px 0;
+}
+
+.slider {
+    width: 100%;
+    height: 8px;
+    background: #333;
+    border-radius: 5px;
+    -webkit-appearance: none;
+    appearance: none;
+    cursor: pointer;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: #00ff80;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #00ff80;
+    transition: background 0.3s;
+}
+
+/* ==================================== */
+/* CSS 4: Actividad Física (Lista) */
+/* ==================================== */
+.options-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.list-option {
+    background: #1a1a1a;
+    border-radius: 10px;
+    padding: 15px 20px;
+    cursor: pointer;
+    border: 2px solid #333;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    transition: border-color 0.3s, background 0.3s, box-shadow 0.3s;
+}
+
+.list-option .icon-list {
+    font-size: 1.8em;
+    margin-right: 15px;
+    line-height: 1;
+    filter: grayscale(100%);
+}
+
+.list-option div {
+    flex-grow: 1;
+}
+
+.list-option h4 {
+    margin: 0;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.list-option p {
+    font-size: 0.8em;
+    color: #999;
+    margin: 2px 0 0;
+}
+
+/* Estilo para la opción de lista seleccionada */
+.active-green-list {
+    border-color: #00ff80;
+    box-shadow: 0 0 10px #00ff80;
+    background: #0d1a13;
+}
+
+.active-green-list .icon-list {
+    color: #00ff80;
+    filter: none;
+}
+
+.active-green-list h4 {
+    color: #00ff80;
+}
+
+/* ==================================== */
+/* CSS 5: Carga (Animación) */
+/* ==================================== */
+#screen-carga h1 {
+    font-size: 2em;
+    margin-top: 50px;
+}
+
+#screen-carga .loading-text {
+    font-size: 1.1em;
+    color: #888;
+}
+
+.brain-animation {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-icon {
+    font-size: 3em;
+    z-index: 10;
+    background-color: #111;
+    padding: 15px;
+    border-radius: 8px;
+    color: #00ff80;
+    box-shadow: 0 0 15px #00ff80;
+}
+
+.pulse-ring {
+    position: absolute;
+    border: 4px solid #00ff80;
+    border-radius: 50%;
+    opacity: 0;
+    box-shadow: 0 0 10px #00ff80;
+    animation: pulse 4s infinite cubic-bezier(0.6, 0.2, 0.4, 1.2);
+}
+
+.ring-1 {
+    width: 60px; height: 60px;
+    animation-delay: 0s;
+}
+
+.ring-2 {
+    width: 120px; height: 120px;
+    animation-delay: 1s;
+}
+
+.ring-3 {
+    width: 200px; height: 200px;
+    animation-delay: 2s;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.3);
+        opacity: 0.8;
+    }
+    100% {
+        transform: scale(1.1);
+        opacity: 0;
+    }
+}
+/* ==================================== */
+/* ANIMACIÓN DE PUNTOS DE CARGA */
+/* ==================================== */
+
+.dot-animation-line {
+    margin-top: 10px; /* Separación del texto de arriba */
+    min-height: 20px; /* Asegura espacio para la animación */
+}
+
+.loading-dots:after {
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: bottom;
+    animation: loading-dots-anim 1.5s steps(4) infinite;
+    content: "\2024\2024\2024"; /* Tres puntos Unicode */
+    color: #00ff80; /* Color verde neón */
+    font-size: 1.8em; /* Hacemos los puntos más grandes */
+    font-weight: bold;
+    line-height: 1;
+    letter-spacing: 5px;
+}
+
+@keyframes loading-dots-anim {
+    0% {
+        width: 0ch;
+        opacity: 0.1;
+    }
+    25% {
+        width: 1ch; /* Muestra 1 punto */
+        opacity: 0.4;
+    }
+    50% {
+        width: 2ch; /* Muestra 2 puntos */
+        opacity: 0.7;
+    }
+    75% {
+        width: 3ch; /* Muestra 3 puntos */
+        opacity: 1;
+    }
+    100% {
+        width: 3ch;
+        opacity: 0.1; /* Oculta y reinicia */
+    }
+}

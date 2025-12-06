@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pulse+ | Crea tu cuenta</title>
+    <link rel="stylesheet" href="assets/styles/iniciar_sesion/iniciar-sesion.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+
+    <div class="login-container">
+        
+    <a href="index.html" class="back-link">
+        <span class="material-icons">arrow_back</span> Volver
+    </a>
+        
+        <header class="register-header">
+            <h1>Crea tu cuenta</h1>
+            <p class="account-type-tagline">Comienza tu transformación</p>
+        </header>
+
+        <form class="register-form" action="seleccion.html" method="POST"> 
+            <div class="input-group">
+                <label for="full-name">Nombre completo</label>
+                <input type="text" id="full-name" placeholder="Romina Apaza Pacho" required>
+            </div>
+
+            <div class="input-group">
+                <label for="age">Edad</label>
+                <input type="number" id="age" placeholder="22" required>
+            </div>
+
+            <div class="input-group">
+                <label for="email">Correo electrónico</label>
+                <input type="email" id="email" placeholder="tu@gmail.com" required>
+            </div>
+
+            <div class="input-group">
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" placeholder="••••••••" required>
+            </div>
+
+            <button type="submit" class="login-button register-button">Crear cuenta</button>
+        </form>
+    </div>
+
+</body>
+</html>

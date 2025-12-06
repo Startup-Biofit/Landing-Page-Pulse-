@@ -1,0 +1,345 @@
+/* FUENTE GLOBAL */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* RESET BÁSICO (Crucial para responsive) */
+* {
+  box-sizing: border-box;
+}
+
+/* CONFIGURACIÓN GENERAL */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background-color: #ffffff;
+  color: #222;
+  text-align: center;
+  overflow-x: hidden; /* Evita scroll horizontal indeseado */
+}
+
+h2 {
+  font-size: 2rem;
+  margin-top: 2rem;
+  color: #0f0f0f;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.resaltar-verde {
+  color: #01c96b;
+  font-weight: 700;
+}
+
+/* =========================================
+   PLANES Y PRECIOS
+   ========================================= */
+
+.contenedor-planes {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Alineación vertical central */
+  gap: 2.5rem;
+  padding: 3rem 2rem;
+  flex-wrap: wrap; /* Permite que bajen si no caben */
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* TARJETAS */
+.plan-card {
+  background: #0f0f0f;
+  color: #fff;
+  padding: 2rem;
+  border-radius: 20px;
+  width: 320px;
+  max-width: 100%; /* Seguridad para móviles */
+  text-align: center;
+  position: relative;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.plan-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 35px rgba(0,0,0,0.35);
+  z-index: 5;
+}
+
+/* DESTACADO (Escritorio) */
+.destacado {
+  border: 2px solid #00ff88;
+  transform: scale(1.05); /* Ligeramente más grande */
+  z-index: 10;
+  background: #1a1a1a; /* Un tono ligeramente diferente para resaltar */
+}
+
+.destacado:hover {
+  transform: translateY(-8px) scale(1.05);
+  box-shadow: 0 12px 35px rgba(0,255,136,0.3);
+}
+
+.badge {
+  position: absolute;
+  top: -14px;
+  right: 20px;
+  background: #00ff88;
+  color: #000;
+  padding: 6px 12px;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  box-shadow: 0 0 10px rgba(0,255,136,0.5);
+}
+
+.plan-card h3 {
+  margin: 0 0 1rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.precio {
+  font-size: 2.3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.precio span {
+  font-size: 1rem;
+  font-weight: 300;
+  color: #ccc;
+}
+
+/* LISTAS DE CARACTERÍSTICAS */
+ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 2rem; /* Espacio antes del botón */
+  flex-grow: 1; /* Empuja el botón al fondo */
+}
+
+ul li {
+  margin-bottom: 0.8rem;
+  text-align: left;
+  padding-left: 1.6rem;
+  padding-right: 0;
+  position: relative;
+  color: #e2e2e2;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+ul li::before {
+  content: '✔';
+  position: absolute;
+  left: 0;
+  color: #00ff88;
+  font-weight: bold;
+}
+
+/* BOTONES */
+.btn {
+  font-family: 'Poppins', sans-serif;
+  background-color: #00ff99;
+  border: none;
+  color: #000;
+  padding: 0.8rem 1.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+  width: 100%; /* Botones ancho completo en la tarjeta */
+  font-weight: 600;
+}
+
+.btn:hover {
+  opacity: 0.85;
+  transform: scale(1.02);
+}
+
+.btn.verde {
+  background: #00ff88;
+  box-shadow: 0 0 12px rgba(0,255,140,0.4);
+}
+
+/* =========================================
+   SECCIÓN CTA
+   ========================================= */
+.cta-lima {
+  background: #0f0f0f;
+  color: #fff;
+  width: 90%;
+  max-width: 800px;
+  padding: 3rem 2rem;
+  text-align: center;
+  border-radius: 1.5rem;
+  margin: 4rem auto;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.cta-lima h2 {
+  margin-bottom: 1rem;
+  color: #ffffff;
+  margin-top: 0;
+}
+
+.cta-lima p {
+  margin-top: 0;
+  margin-bottom: 25px;
+  color: #ccc;
+  font-size: 1.1rem;
+}
+
+.cta-lima h2 span { color: #00ff88; }
+.btn.grande { font-size: 1.1rem; width: auto; padding: 1rem 2rem; border-radius: 50px; }
+
+
+/* =========================================
+   FOOTER
+   ========================================= */
+.footer {
+  background: #0d0d0d;
+  color: #ccc;
+  padding: 4rem 2rem;
+  text-align: left;
+  border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+.footer-contenedor {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 3rem;
+  margin-bottom: 3rem;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer-col h4 {
+  color: #fff;
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.footer-col ul li {
+  margin-bottom: 0.8rem;
+  color: #aaa;
+  transition: 0.3s;
+  padding-left: 0; 
+}
+
+.footer-col ul li::before { content: none; } /* Sin check en footer */
+
+.footer-col ul li:hover {
+  color: #00ff88;
+  cursor: pointer;
+  transform: translateX(5px);
+}
+
+.copyright {
+  text-align: center;
+  color: #555;
+  font-size: 0.9rem;
+  border-top: 1px solid rgba(255,255,255,0.05);
+  padding-top: 2rem;
+}
+
+
+/* =========================================
+   MEDIA QUERY: RESPONSIVE
+   ========================================= */
+
+/* Tablets y Pantallas Medianas (max 1024px) */
+@media (max-width: 1024px) {
+  .contenedor-planes {
+    gap: 2rem;
+  }
+  
+  .plan-card {
+    width: 300px; /* Reducir un poco en tablets */
+  }
+}
+
+/* Móviles y Tablets Pequeñas (max 768px) */
+@media (max-width: 768px) {
+  
+  /* Ajustes Generales */
+  h2 { font-size: 1.8rem; }
+
+  /* Planes en Columna */
+  .contenedor-planes {
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    padding: 2rem 1rem;
+  }
+
+  .plan-card {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  /* Resetear estilos del destacado para móvil */
+  .destacado {
+    transform: none; 
+    border-width: 2px;
+    /* Un borde visual para saber que es el recomendado en móvil */
+    box-shadow: 0 0 15px rgba(0, 255, 136, 0.15); 
+  }
+  
+  .destacado:hover {
+    transform: translateY(-5px); /* Movimiento sutil */
+  }
+
+  .badge {
+    top: -12px;
+    right: 50%;
+    transform: translateX(50%); /* Centrar etiqueta en móvil */
+  }
+
+  /* CTA */
+  .cta-lima {
+    width: 95%;
+    padding: 2rem 1.5rem;
+    margin: 3rem auto;
+  }
+
+  /* Footer Centrado */
+  .footer {
+    text-align: center;
+    padding: 3rem 1.5rem;
+  }
+
+  .footer-contenedor {
+    gap: 2.5rem;
+    grid-template-columns: 1fr; /* Una sola columna */
+  }
+  
+  .footer-col ul li {
+    padding-left: 0;
+  }
+  
+  .footer-col ul li:hover {
+    transform: none; /* Quitar desplazamiento en touch */
+    color: #00ff88;
+  }
+}
+
+/* Móviles Pequeños (max 480px) */
+@media (max-width: 480px) {
+  .plan-card {
+    padding: 1.5rem;
+  }
+
+  .precio {
+    font-size: 2rem;
+  }
+
+  .cta-lima h2 {
+    font-size: 1.5rem;
+  }
+
+  .btn.grande {
+    width: 100%; /* Botón full width en CTA */
+  }
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pulse+ | Seleccionar Cuenta</title>
+    <link rel="stylesheet" href="assets/styles/iniciar_sesion/iniciar-sesion.css"> 
+    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <div class="selection-container">
+        
+        <a href="iniciar-sesion.html" class="back-link">
+            <span class="material-icons">arrow_back</span> Volver
+        </a>
+
+        <h2 class="main-title">Selecciona tu tipo de cuenta</h2>
+        <p class="subtitle">Elige cómo quieres usar Pulse+</p>
+
+        <form class="selection-form" action="asistente-ia.html">
+            
+            <label for="user-fit" class="option-card" data-role="fit">
+                <input type="radio" id="user-fit" name="account_type" value="fit">
+                
+                <div class="icon-box">
+                    <i class="fas fa-dumbbell"></i>
+                </div>
+                
+                <div class="text-content">
+                    <h3>Usuario Fit</h3>
+                    <p>Mejora tu salud con entrenamiento personalizado</p>
+                </div>
+            </label>
+
+            <label for="trainer" class="option-card" data-role="trainer">
+                <input type="radio" id="trainer" name="account_type" value="trainer">
+                
+                <div class="icon-box">
+                    <i class="fas fa-medal"></i>
+                </div>
+                
+                <div class="text-content">
+                    <h3>Entrenador</h3>
+                    <p>Gestiona clientes y crea rutinas profesionales</p>
+                </div>
+            </label>
+            
+            <button type="submit" class="continue-button">Continuar</button>
+
+        </form> 
+        </div>
+
+    <script src="assets/scripts/selection_handler/selection-handler.js"></script> 
+
+</body>
+</html>

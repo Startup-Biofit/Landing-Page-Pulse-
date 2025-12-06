@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-width=1.0">
+    <title>Pulse+ | Panel de Clientes</title>
+    
+    <link rel="stylesheet" href="assets/styles/panel_clientes/panel-clientes.css">
+    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <div class="client-dashboard-container">
+
+        <div class="client-list-sidebar">
+            <header class="sidebar-header">
+                <div class="client-list-sidebar">
+
+            <a href="dashboard_entrenador.html" class="back-link"> 
+                <span class="material-icons">arrow_back</span> Volver
+            </a>
+
+            <header class="sidebar-header">
+                <h1 class="sidebar-title">Panel de Clientes</h1>
+                <p class="sidebar-subtitle">Gestiona y monitorea el progreso de tus clientes</p>
+                <button class="add-client-button">
+                    + Añadir cliente...
+                </button>
+            </header>
+
+            <div class="client-list-scrollable">
+                <div class="client-items">
+                    <a href="#" class="client-item" data-client-id="carlos" onclick="showClientDetail('carlos'); return false;">
+                    <div class="client-meta">
+                        <span class="client-name">Carlos Méndez</span>
+                        <span class="client-age">37 años</span>
+                        <span class="client-time">Hace 3 horas</span>
+                    </div>
+                    <div class="client-stats">
+                        <div class="stat-badge rec">REC 92%</div>
+                        <div class="stat-badge trn">TRN 88%</div>
+                        <div class="stat-badge nut">NUT 85%</div>
+                    </div>
+                </a>
+
+                <a href="#" class="client-item active-client" data-client-id="ana" onclick="showClientDetail('ana'); return false;">
+                    <div class="client-meta">
+                        <span class="client-name">Ana Rodríguez</span>
+                        <span class="client-age">28 años</span>
+                        <span class="client-time">Hace 3 horas</span>
+                    </div>
+                    <div class="client-stats">
+                        <div class="stat-badge rec">REC 78%</div>
+                        <div class="stat-badge trn">TRN 82%</div>
+                        <div class="stat-badge nut">NUT 90%</div>
+                    </div>
+                </a>
+                
+                <a href="#" class="client-item" data-client-id="miguel" onclick="showClientDetail('miguel'); return false;">
+                    <div class="client-meta">
+                        <span class="client-name">Miguel Torres</span>
+                        <span class="client-age">25 años</span>
+                        <span class="client-time">Hace 1 día</span>
+                    </div>
+                    <div class="client-stats">
+                        <div class="stat-badge rec red-rec">REC 65%</div>
+                        <div class="stat-badge trn">TRN 70%</div>
+                        <div class="stat-badge nut">NUT 68%</div>
+                    </div>
+                </a>
+                
+                <a href="#" class="client-item" data-client-id="laura" onclick="showClientDetail('laura'); return false;">
+                    <div class="client-meta">
+                        <span class="client-name">Laura Gómez</span>
+                        <span class="client-age">26 años</span>
+                        <span class="client-time">Hace 3 horas</span>
+                    </div>
+                    <div class="client-stats">
+                        <div class="stat-badge rec">REC 95%</div>
+                        <div class="stat-badge trn">TRN 96%</div>
+                        <div class="stat-badge nut">NUT 88%</div>
+                    </div>
+                </a>
+
+                <a href="#" class="client-item" data-client-id="david" onclick="showClientDetail('david'); return false;">
+                    <div class="client-meta">
+                        <span class="client-name">David Sánchez</span>
+                        <span class="client-age">40 años</span>
+                        <span class="client-time">Hace 3 horas</span>
+                    </div>
+                    <div class="client-stats">
+                        <div class="stat-badge rec">REC 80%</div>
+                        <div class="stat-badge trn">TRN 75%</div>
+                        <div class="stat-badge nut">NUT 82%</div>
+                    </div>
+                </a>
+                    
+                    </div>
+            </div>
+        </div>>
+        </header>
+    </div>>
+
+        <div class="client-detail-panel">
+            
+            <div class="panel-top-bar">
+                <span class="assistant-link">
+                    <span class="material-icons">flash_on</span> Asistente IA
+                </span>
+                <div class="panel-icons">
+                    <span class="material-icons">notifications</span>
+                    <span class="material-icons">settings</span>
+                    <span class="material-icons">account_circle</span>
+                </div>
+            </div>
+
+            <div id="client-detail-ana" class="client-detail-content active-detail">
+                <div class="client-profile-header">
+                    <img src="https://static01.nyt.com/images/2017/05/07/arts/07GAL-GADOTweb/07GAL-GADOTweb-videoSixteenByNineJumbo1600.jpg" alt="Perfil de Ana Rodríguez" class="client-profile-picture">
+                    <div class="client-header-info">
+                        <h2 class="client-name-large">Ana Rodríguez</h2>
+                        <p class="client-age-detail">28 años</p>
+                        <span class="client-recovery-status">Bien</span>
+                    </div>
+                </div>
+                <div class="progress-summary">
+                    <div class="progress-item large-rec"><span class="progress-label">Recuperación</span><span class="progress-value rec-value">78%</span></div>
+                    <div class="progress-item large-trn"><span class="progress-label">Entrenamiento</span><span class="progress-value trn-value">82%</span></div>
+                    <div class="progress-item large-nut"><span class="progress-label">Nutrición</span><span class="progress-value nut-value">90%</span></div>
+                </div>
+                <h3 class="section-title-panel">Datos Biométricos</h3>
+                <div class="biometrics-grid">
+                    <div class="biometric-item"><span class="biometric-label">HRV</span><span class="biometric-value">68 ms</span></div>
+                    <div class="biometric-item"><span class="biometric-label">Cortisol</span><span class="biometric-value">12.5 &mu;g/dL</span></div>
+                    <div class="biometric-item"><span class="biometric-label">Sueño</span><span class="biometric-value">8h 15m</span></div>
+                    <div class="biometric-item"><span class="biometric-label">Peso</span><span class="biometric-value">78.5 kg</span></div>
+                </div>
+                <h3 class="section-title-panel">Actividad Reciente</h3>
+                <div class="activity-list">
+                    <div class="activity-item"><span class="activity-text">Completó HIIT Cardio</span><span class="activity-time">Hace 2h</span><span class="activity-data">45 min</span></div>
+                    <div class="activity-item"><span class="activity-text">Registró almuerzo</span><span class="activity-time">Hace 3h</span><span class="activity-data">650 kcal</span></div>
+                    <div class="activity-item"><span class="activity-text">Fuerza - Tren Superior</span><span class="activity-time">Ayer</span><span class="activity-data">60 min</span></div>
+                </div>
+            </div>
+            
+            <div id="client-detail-carlos" class="client-detail-content">
+                <div class="client-profile-header">
+                    <img src="https://pbs.twimg.com/profile_images/1631130953635471362/O9ns1MI7_400x400.jpg" alt="Perfil de Carlos Méndez" class="client-profile-picture">
+                    <div class="client-header-info">
+                        <h2 class="client-name-large">Carlos Méndez</h2>
+                        <p class="client-age-detail">37 años</p>
+                        <span class="client-recovery-status" style="background-color: #00ff80; color: #1a1f26;">Excelente</span>
+                    </div>
+                </div>
+                <div class="progress-summary">
+                    <div class="progress-item large-rec"><span class="progress-label">Recuperación</span><span class="progress-value rec-value">92%</span></div>
+                    <div class="progress-item large-trn"><span class="progress-label">Entrenamiento</span><span class="progress-value trn-value">88%</span></div>
+                    <div class="progress-item large-nut"><span class="progress-label">Nutrición</span><span class="progress-value nut-value">85%</span></div>
+                </div>
+                <h3 class="section-title-panel">Datos Biométricos</h3>
+                <div class="biometrics-grid">
+                    <div class="biometric-item"><span class="biometric-label">HRV</span><span class="biometric-value">82 ms</span></div>
+                    <div class="biometric-item"><span class="biometric-label">Cortisol</span><span class="biometric-value">9.8 $\mu\text{g/dL}$</span></div>
+                    <div class="biometric-item"><span class="biometric-label">Sueño</span><span class="biometric-value">7h 50m</span></div>
+                    <div class="biometric-item"><span class="biometric-label">Peso</span><span class="biometric-value">85.2 kg</span></div>
+                </div>
+                <h3 class="section-title-panel">Actividad Reciente</h3>
+                <div class="activity-list">
+                    <div class="activity-item"><span class="activity-text">Completó Ciclismo (LISS)</span><span class="activity-time">Ayer</span><span class="activity-data">60 min</span></div>
+                    <div class="activity-item"><span class="activity-text">Registró cena</span><span class="activity-time">Ayer</span><span class="activity-data">720 kcal</span></div>
+                    <div class="activity-item"><span class="activity-text">Día de Descanso</span><span class="activity-time">Hace 2 días</span><span class="activity-data"></span></div>
+                </div>
+            </div>
+
+            <div id="client-detail-miguel" class="client-detail-content">
+                <div class="client-profile-header">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSrftXKiGZ9kruP7uCKA4o1ohJ0IFNg-3LLg&s" alt="Perfil de Miguel Torres" class="client-profile-picture">
+                    <div class="client-header-info">
+                        <h2 class="client-name-large">Miguel Torres</h2>
+                        <p class="client-age-detail">25 años</p>
+                        <span class="client-recovery-status" style="background-color: #F44336;">Baja</span>
+                    </div>
+                </div>
+                <div class="progress-summary">
+                    <div class="progress-item large-rec"><span class="progress-label">Recuperación</span><span class="progress-value rec-value">65%</span></div>
+                    <div class="progress-item large-trn"><span class="progress-label">Entrenamiento</span><span class="progress-value trn-value">70%</span></div>
+                    <div class="progress-item large-nut"><span class="progress-label">Nutrición</span><span class="progress-value nut-value">68%</span></div>
+                </div>
+                <h3 class="section-title-panel">Datos Biométricos</h3>
+                <div class="biometrics-grid">
+                    <div class="biometric-item"><span class="biometric-label">HRV</span><span class="biometric-value">55 ms</span></div>
+                    <div class="biometric-item"><span class="biometric-label">Cortisol</span><span class="biometric-value">18.9 $\mu\text{g/dL}$</span></div>
+                    <div class="biometric-item"><span class="biometric-label">Sueño</span><span class="biometric-value">6h 00m</span></div>
+                    <div class="biometric-item"><span class="biometric-label">Peso</span><span class="biometric-value">65.0 kg</span></div>
+                </div>
+                <h3 class="section-title-panel">Actividad Reciente</h3>
+                <div class="activity-list">
+                    <div class="activity-item"><span class="activity-text">Fuerza - Tren Inferior</span><span class="activity-time">Hace 6h</span><span class="activity-data">90 min</span></div>
+                    <div class="activity-item"><span class="activity-text">Registró desayuno</span><span class="activity-time">Hace 8h</span><span class="activity-data">450 kcal</span></div>
+                    <div class="activity-item"><span class="activity-text">No completó objetivo de sueño</span><span class="activity-time">Anoche</span><span class="activity-data"></span></div>
+                </div>
+            </div>
+            
+            <div id="client-detail-laura" class="client-detail-content">
+                <div class="client-profile-header">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSn7cpla2LPAc_4JC0vvGU7xW7_asMNPRY3tw&s" alt="Perfil de Laura Gómez" class="client-profile-picture">
+                    <div class="client-header-info">
+                        <h2 class="client-name-large">Laura Gómez</h2>
+                        <p class="client-age-detail">26 años</p>
+                        <span class="client-recovery-status" style="background-color: #2196F3;">Perfecta</span>
+                    </div>
+                </div>
+                <div class="progress-summary">
+                    <div class="progress-item large-rec"><span class="progress-label">Recuperación</span><span class="progress-value rec-value">95%</span></div>
+                    <div class="progress-item large-trn"><span class="progress-label">Entrenamiento</span><span class="progress-value trn-value">96%</span></div>
+                    <div class="progress-item large-nut"><span class="progress-label">Nutrición</span><span class="progress-value nut-value">88%</span></div>
+                </div>
+                <h3 class="section-title-panel">Datos Biométricos</h3>
+                <div class="biometrics-grid">
+                    <div class="biometric-item"><span class="biometric-label">HRV</span><span class="biometric-value">75 ms</span></div>
+                    <div class="biometric-item"><span class="biometric-label">Cortisol</span><span class="biometric-value">11.0 $\mu\text{g/dL}$</span></div>
+                    <div class="biometric-item"><span class="biometric-label">Sueño</span><span class="biometric-value">8h 40m</span></div>
+                    <div class="biometric-item"><span class="biometric-label">Peso</span><span class="biometric-value">62.1 kg</span></div>
+                </div>
+                <h3 class="section-title-panel">Actividad Reciente</h3>
+                <div class="activity-list">
+                    <div class="activity-item"><span class="activity-text">Fuerza - Tren Superior</span><span class="activity-time">Hace 3h</span><span class="activity-data">55 min</span></div>
+                    <div class="activity-item"><span class="activity-text">Registró cena</span><span class="activity-time">Ayer</span><span class="activity-data">600 kcal</span></div>
+                    <div class="activity-item"><span class="activity-text">Clase de Yoga</span><span class="activity-time">Hace 2 días</span><span class="activity-data">45 min</span></div>
+                </div>
+            </div>
+
+            <div id="client-detail-david" class="client-detail-content">
+                <div class="client-profile-header">
+                    <img src="https://static.wikia.nocookie.net/casi-angeles/images/0/04/David_masajnik-01.jpg/revision/latest?cb=20130630023901&path-prefix=es" alt="Perfil de David Sánchez" class="client-profile-picture">
+                    <div class="client-header-info">
+                        <h2 class="client-name-large">David Sánchez</h2>
+                        <p class="client-age-detail">40 años</p>
+                        <span class="client-recovery-status" style="background-color: #FF9800;">Buena</span>
+                    </div>
+                </div>
+                <div class="progress-summary">
+                    <div class="progress-item large-rec"><span class="progress-label">Recuperación</span><span class="progress-value rec-value">80%</span></div>
+                    <div class="progress-item large-trn"><span class="progress-label">Entrenamiento</span><span class="progress-value trn-value">75%</span></div>
+                    <div class="progress-item large-nut"><span class="progress-label">Nutrición</span><span class="progress-value nut-value">82%</span></div>
+                </div>
+                <h3 class="section-title-panel">Datos Biométricos</h3>
+                <div class="biometrics-grid">
+                    <div class="biometric-item"><span class="biometric-label">HRV</span><span class="biometric-value">65 ms</span></div>
+                    <div class="biometric-item"><span class="biometric-label">Cortisol</span><span class="biometric-value">14.2 $\mu\text{g/dL}$</span></div>
+                    <div class="biometric-item"><span class="biometric-label">Sueño</span><span class="biometric-value">7h 10m</span></div>
+                    <div class="biometric-item"><span class="biometric-label">Peso</span><span class="biometric-value">95.8 kg</span></div>
+                </div>
+                <h3 class="section-title-panel">Actividad Reciente</h3>
+                <div class="activity-list">
+                    <div class="activity-item"><span class="activity-text">Carrera de 5 km</span><span class="activity-time">Hace 5h</span><span class="activity-data">30 min</span></div>
+                    <div class="activity-item"><span class="activity-text">Registró cena</span><span class="activity-time">Ayer</span><span class="activity-data">800 kcal</span></div>
+                    <div class="activity-item"><span class="activity-text">Sesión de Movilidad</span><span class="activity-time">Ayer</span><span class="activity-data">20 min</span></div>
+                </div>
+            </div>
+            </a>
+        </div>
+
+    </div>
+
+    <script>
+        function showClientDetail(clientId) {
+            // Ocultar todos los paneles de detalle
+            const allDetails = document.querySelectorAll('.client-detail-content');
+            allDetails.forEach(detail => {
+                detail.classList.remove('active-detail');
+            });
+
+            // Mostrar el panel de detalle específico
+            const activeDetail = document.getElementById(`client-detail-${clientId}`);
+            if (activeDetail) {
+                activeDetail.classList.add('active-detail');
+            }
+
+            // Actualizar la clase 'active-client' en la lista lateral
+            const allListItems = document.querySelectorAll('.client-item');
+            allListItems.forEach(item => {
+                item.classList.remove('active-client');
+            });
+
+            const selectedItem = document.querySelector(`.client-item[data-client-id="${clientId}"]`);
+            if (selectedItem) {
+                selectedItem.classList.add('active-client');
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            // Inicializar la vista con Ana Rodríguez al cargar
+            showClientDetail('ana'); 
+        });
+    </script>
+</body>
+</html>

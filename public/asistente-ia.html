@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pulse+ | Asistente Personal</title>
+    <link rel="stylesheet" href="assets/styles/iniciar_sesion/iniciar-sesion.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <div class="ia-screen-container">
+        
+        <div class="ia-card">
+            <div class="ia-logo-icon">
+                <i class="fas fa-bolt"></i>
+            </div>
+            
+            <h1 class="ia-title">Hola, soy tu asistente personal impulsado por IA</h1>
+            <p class="ia-subtitle">Crearé un plan completamente personalizado para ti</p>
+            
+            <a href="screens.html"><button class="continue-button ia-button">Continuar</button></a>
+        </div>
+        
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // 1. Función para leer el parámetro 'role' de la URL
+            function getUrlParameter(name) {
+                name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+                var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+                var results = regex.exec(location.search);
+                return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+            }
+
+            const userRole = getUrlParameter('role');
+            const continueButtonAnchor = document.querySelector('.ia-button').parentElement;
+            
+            console.log("Rol detectado en asistente-ia.html:", userRole);
+
+            // 2. Lógica de Redirección para Entrenadores
+            if (userRole === 'trainer') {
+                console.log("Redirigiendo Entrenador al Dashboard...");
+                // Redirigir inmediatamente para evitar que vea la pantalla
+                window.location.href = 'dashboard_entrenador.html';
+                
+            } else if (userRole === 'fit') {
+                // 3. Lógica para Usuarios Fit: Ajustar el enlace del botón
+                
+                // Aseguramos que el rol se adjunte al enlace para que screens.js lo detecte
+                continueButtonAnchor.href = `screens.html?role=fit`;
+                console.log("Usuario Fit: El botón Continuar ahora apunta a: ", continueButtonAnchor.href);
+                
+            } else {
+                // 4. Caso de Rol Desconocido o No Proporcionado
+                console.error("Rol no detectado. El usuario podrá continuar a screens.html sin rol.");
+            }
+        });
+    </script>
+
+</body>
+</html>

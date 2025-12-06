@@ -1,0 +1,335 @@
+:root {
+    --bg-color: #050505;
+    --card-bg: #111111;
+    --card-border: #333333;
+    --accent-green: #00ff9d;
+    --text-white: #ffffff;
+    --text-gray: #a0a0a0;
+}
+
+* { box-sizing: border-box; }
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-white);
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* --- Estructura Principal Desktop --- */
+.app-container {
+    width: 90%;
+    max-width: 1000px; /* Ancho contenido */
+    padding: 40px;
+    padding-bottom: 100px;
+    box-sizing: border-box;
+}
+
+/* --- Header --- */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 40px;
+}
+
+.back-link {
+    text-decoration: none;
+    color: var(--accent-green);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: 0.3s;
+}
+.back-link:hover { opacity: 0.8; transform: translateX(-5px); }
+
+.header-title { text-align: center; }
+.header-title h1 { margin: 0; font-size: 2rem; }
+.header-title span { color: var(--text-gray); font-size: 0.95rem; }
+
+/* --- Tarjetas de Estadísticas (Top) --- */
+.stats-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.stat-card {
+    background-color: transparent;
+    border: 1px solid var(--card-border);
+    border-radius: 16px;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    gap: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.stat-icon {
+    color: var(--accent-green);
+    font-size: 1.5rem;
+    width: 40px; height: 40px;
+    border: 1px solid #333;
+    border-radius: 50%;
+    display: flex; justify-content: center; align-items: center;
+    flex-shrink: 0; /* Evita que el icono se aplaste */
+}
+
+.stat-info { text-align: center; }
+.stat-info h2 { margin: 0; font-size: 1.8rem; color: var(--accent-green); }
+.stat-info span { color: var(--text-gray); font-size: 0.9rem; }
+
+/* --- Grid de Gráficos --- */
+.charts-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas iguales para Desktop */
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.chart-card {
+    background-color: transparent;
+    border: 1px solid var(--card-border);
+    border-radius: 16px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.chart-card h3 { margin: 0 0 5px 0; font-size: 1.2rem; }
+.subtitle { color: #666; font-size: 0.85rem; margin-bottom: 20px; display: block; }
+
+/* Gráfico de Barras CSS */
+.bar-chart-container {
+    display: flex;
+    height: 200px;
+    position: relative;
+    padding-left: 30px; /* Espacio para eje Y */
+    border-bottom: 1px solid #333;
+}
+
+.y-axis {
+    position: absolute; left: 0; top: 0; bottom: 0;
+    display: flex; flex-direction: column; justify-content: space-between;
+    color: #555; font-size: 0.7rem;
+    height: 100%;
+}
+
+.bars-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+    height: 100%;
+    padding-left: 10px;
+}
+
+.bar-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 12%; 
+    height: 100%;
+    justify-content: flex-end;
+}
+
+.bar {
+    width: 100%;
+    background-color: var(--accent-green);
+    border-radius: 4px 4px 0 0;
+    transition: height 0.5s ease;
+    box-shadow: 0 0 10px rgba(0, 255, 157, 0.2);
+}
+
+.bar:hover { filter: brightness(1.2); cursor: pointer; }
+
+.bar-group .label {
+    margin-top: 10px;
+    color: #777;
+    font-size: 0.75rem;
+}
+
+/* Gráfico de Línea (SVG) */
+.line-chart-container {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.line-svg {
+    width: 100%;
+    height: 100%;
+    overflow: visible; 
+}
+
+.line-labels {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #333;
+    padding-top: 10px;
+    color: #777;
+    font-size: 0.75rem;
+    padding: 10px 20px 0 20px; 
+}
+
+
+/* --- Línea Temporal (Lista) --- */
+.timeline-section h3 { font-size: 1.5rem; margin-bottom: 20px; }
+
+.timeline-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.timeline-item {
+    border: 1px solid var(--card-border);
+    border-radius: 50px; 
+    padding: 15px 25px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    transition: transform 0.2s;
+}
+
+.timeline-item:hover {
+    border-color: #444;
+    background-color: rgba(255,255,255,0.02);
+}
+
+.tl-icon {
+    width: 30px; height: 30px;
+    border: 1px solid var(--accent-green);
+    border-radius: 50%;
+    display: flex; justify-content: center; align-items: center;
+    color: var(--accent-green);
+    font-size: 0.9rem;
+    flex-shrink: 0;
+}
+
+.highlight .tl-icon {
+    background-color: rgba(0, 255, 157, 0.1);
+    box-shadow: 0 0 10px rgba(0, 255, 157, 0.2);
+}
+
+.tl-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.tl-date {
+    font-size: 0.8rem;
+    color: #777;
+    margin-bottom: 2px;
+}
+
+.tl-content p {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+/* --- Navegación Flotante (Estilo Desktop) --- */
+.bottom-nav {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(20, 20, 20, 0.95);
+    border: 1px solid #333;
+    border-radius: 50px;
+    padding: 15px 40px;
+    display: flex;
+    gap: 40px;
+    z-index: 100;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    backdrop-filter: blur(5px);
+}
+
+.nav-item {
+    color: #666;
+    font-size: 1.3rem;
+    transition: 0.3s;
+    text-decoration: none;
+    display: flex; justify-content: center; align-items: center;
+}
+
+.nav-item:hover, .nav-item.active {
+    color: var(--accent-green);
+    transform: scale(1.1);
+}
+.nav-item.active {
+    text-shadow: 0 0 10px rgba(0, 255, 157, 0.6);
+}
+
+
+/* =========================================
+   --- RESPONSIVE (MEDIA QUERIES) ---
+   ========================================= */
+
+/* Tablets (menos de 1024px) */
+@media (max-width: 1024px) {
+    .app-container {
+        width: 95%;
+        padding: 30px;
+    }
+}
+
+/* Móviles (menos de 768px) */
+@media (max-width: 768px) {
+    
+    /* 1. Contenedor Principal */
+    .app-container {
+        width: 100%;
+        padding: 20px;
+        margin-bottom: 90px; /* Más espacio para el nav */
+    }
+
+    /* 2. Header Vertical */
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        position: relative; /* Para mover cosas si es necesario */
+    }
+    
+    .header-title { text-align: left; }
+    .header-title h1 { font-size: 1.8rem; }
+
+    /* 3. Grids a 1 sola columna */
+    .stats-row, 
+    .charts-grid { 
+        grid-template-columns: 1fr; 
+        gap: 15px;
+    }
+
+    /* 4. Ajustes en las gráficas para que quepan */
+    .chart-card { padding: 20px 15px; } /* Menos padding lateral */
+    .bar-chart-container, .line-chart-container { height: 180px; } /* Un poco menos altas */
+
+    /* 5. Línea Temporal más compacta */
+    .timeline-item {
+        padding: 15px;
+        gap: 15px;
+    }
+    .tl-content p { font-size: 0.95rem; }
+
+    /* 6. Nav Inferior Ajustada */
+    .bottom-nav {
+        width: 90%;
+        padding: 15px 20px;
+        justify-content: space-between;
+        gap: 0;
+    }
+    .nav-item { font-size: 1.2rem; }
+}
